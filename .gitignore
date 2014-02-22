@@ -1,0 +1,14 @@
+#All output html files
+output/
+
+#Python
+*.py[cod]
+
+#Local server pid files
+*.pid
+
+#Vim backup files
+
+.swp
+.swo
+
