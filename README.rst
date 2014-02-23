@@ -14,9 +14,9 @@ Restart terminal, and create virtualenv ::
 
 	mkproject gnu-linux.org
 
-This will drop to ``gnu-linux.org`` virtualenv. Now install `pelican` and `Fabric` ::
+This will drop to ``gnu-linux.org`` virtualenv. Now install `pelican` ::
 
-	pip install pelican Fabric
+	pip install pelican 
 
 To log the version of installed packages ::
 
@@ -63,12 +63,20 @@ Optional. Import existing wordpress site using ``pelican-import`` ::
 
 	pelican-import --wpfile -o content ~/Downloads/gnu-linuxorg.wordpress.2014-02-03.xml
 
-To run the test server ::
+To generate html files ::
 
-	./develop_server.sh restart
+	make html
 
-Optional. To install themes ::
+This will create html files in ``output`` directory. 
 
-	pelican-themes --install ~/tmp/pelican-themes-master/gum --verbose
+Optional. To install themes in virtualenv, create a `static` directory ::
 
+	mkdir static && cd static 
+
+Clone the `pelican theme` repository ::
+
+	git clone https://github.com/getpelican/pelican-themes.git --depth=1
+
+
+To enable theme, just change the name in `pelicanconf.py` file. 
 
