@@ -1,4 +1,10 @@
-{% extends "base.html" %}
+{% extends "base.html" %}	
+	
+		<meta name="description" content="{% block metadesc %}Linux training and consultancy in India. Free download of course content. Free web support and consultancy {% endblock %}" /> <!--Srikant-->
+		<meta name="keywords" content="{% block metakey %}Linux, Consultancy, Training, Development, India, Free Linux training {% endblock %}" /> <!--Srikant-->
+		<meta name="author" content="{% block metaauthor %}Srikant Patnaik{% endblock %}" /> <!--Srikant-->
+		{% block title %}{{ Linux News - Training - Consultancy }} - {{SITENAME}}{%endblock%}
+ 
 {% block navclass %}active{%endblock%}
 {% block content %}
 <section id="content" class="content">

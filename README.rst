@@ -14,8 +14,11 @@ Restart terminal, and create virtualenv ::
 
 	mkproject gnu-linux.org
 
-This will drop to ``gnu-linux.org`` virtualenv. To log the version of installed
-packages ::
+This will drop to ``gnu-linux.org`` virtualenv. Now install `pelican` and `Fabric` ::
+
+	pip install pelican Fabric
+
+To log the version of installed packages ::
 
 	pip freeze > requirements.txt
 
