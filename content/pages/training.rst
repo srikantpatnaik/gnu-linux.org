@@ -22,9 +22,9 @@ Our training material will always available for free under GNU Free Documentatio
   <div class="col-sm-6 col-md-4">
     <div class="thumbnail">
       <div class="caption">
-        <h3>Thumbnail label</h3>
-        <p>...</p>
-        <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+        <h3>The GNU/Linux</h3>
+        <p></p>
+        <p><a href="http://gnu-linux.org/pages/thelinux.html" class="btn btn-default" role="button">Details</a></p>
       </div>
     </div>
   </div>
