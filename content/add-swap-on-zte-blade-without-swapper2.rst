@@ -24,13 +24,11 @@ some system level jobs.
 
 *drewhill77* have used terminal manager to execute all commands but I
 prefer *adb* over it. Usage of `adb`_ is beyond the scope of this post.
-After you enter the device shell using **adb** using
-
-.. code-block:: identifier
+After you enter the device shell using **adb** using::
 
     adb shell
 
-.. raw:: html
+html::
 
    <div id="outline-container-1" class="outline-3">
 
@@ -43,9 +41,7 @@ Change to root
 
 First and foremost thing is to have root access to the device. In
 CyanogenMod, a pre-installed *SuperUser* app with grant root access to
-all applications as well as to file-system.
-
-.. code-block:: identifier
+all applications as well as to file-system ::
 
     su
 
@@ -70,9 +66,8 @@ Create a swap-file
 
    <div class="outline-text-3" id="text-2">
 
-Create a swap-file with the name ``swapfile.swp`` on SD-card.
+Create a swap-file with the name ``swapfile.swp`` on SD-card ::
 
-.. code-block:: identifier
 
     dd if=/dev/zero of=/mnt/sdcard/swapfile.swp bs=1048576 count=256
 
@@ -100,16 +95,12 @@ Make swap and turn it on.
 Once swapfile is created, which should not take more than a couple of
 minutes. Convert it into swapfile(previously it was just a bunch of
 zero's). And finally inform system to use it as a swap file or add it to
-existing swap if is already exist.
-
-.. code-block:: identifier
+existing swap if is already exist ::
 
     mkswap /mnt/sdcard/swapfile.swp
     swapon /mnt/sdcard/swapfile.swp
 
-Once swap is added, its time to confirm it using ``free`` command.
-
-.. code-block:: identifier
+Once swap is added, its time to confirm it using ``free`` command ::
 
     free -m
 
@@ -150,27 +141,20 @@ how aggressively you want the kernel to use swap. It's value ranges from
 0 to 100. The lower value means kernel will try to avoid using swap
 whereas for higher value it will use swap as much as possible. For most
 systems, the default value is set to 60. One can check the value of
-swappiness by reading the file ``/proc/sys/vm/swappiness``
-
-.. code-block:: identifier
+swappiness by reading the file ``/proc/sys/vm/swappiness`` ::
 
     cat /proc/sys/vm/swappiness
 
-Change the value using
-
-.. code-block:: identifier
+Change the value using::
 
     echo 70 /proc/sys/vm/swappiness
 
-or using
+or using::
 
-.. code-block:: identifier
 
     sysctl -w vm.swappiness=70
 
-Go ahead and change swappiness from 60 to 100.
-
-.. code-block:: identifier
+Go ahead and change swappiness from 60 to 100::
 
     echo 100 /proc/sys/vm/swappiness
 
@@ -222,15 +206,12 @@ this command to system's init. The best place is the
 ``/data/local/userinit.d/`` directory. If you scan the content of
 ``/etc/init.d/90userinit`` file, it looks for user init files under the
 directory ``/data/local/userinit.d/``. Create the directory if it does
-not exist.
-
-.. code-block:: identifier
+not exist::
 
     mkdir -p /data/local/userinit.d
 
 and add the shell script ``99swapon`` with below lines.
 
-.. code-block:: identifier
 
     #!/system/bin/sh
     sleep 75
@@ -243,9 +224,8 @@ script.
 Line 2 is the ``sleep`` command with sleep interval of 75 seconds before
 it executes line 3 which actually adds swap. SD-card is always mounted
 at the end. As a result it is safe to add swap with some intervals after
-system boots. Make the file executable.
+system boots. Make the file executable::
 
-.. code-block:: identifier
 
     chmod +x /data/local/userinit.d/99swapon
 
@@ -270,16 +250,12 @@ swappiness
 
 The second thing is to set default *swappiness* value. It can be done
 from ``/etc/sysctl.conf`` file. ``/etc`` is write protected and it has
-to be remounted as writable before creating a file.
-
-.. code-block:: identifier
+to be remounted as writable before creating a file::
 
     busybox mount -o remount,rw /system
 
 and add below line in the file ``/etc/sysctl.conf``. Create a new file
-if does not exist.
-
-.. code-block:: identifier
+if does not exist::
 
     vm.swappiness=100
 

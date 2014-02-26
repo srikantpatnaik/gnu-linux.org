@@ -6,18 +6,18 @@ Bridging FreeBSD and GNU/Linux using VirtualBox
 :tags: br0, brctl, bridge, em0, FreeBSD, GNU/linux, network, opensuse, vboxnet, virtual Box
 :slug: bridging-freebsd-and-gnulinux-using-virtualbox
 
-| **Introduction and Description:**
-|  ---------------------------------------
-|  This article is small attempt to explain how to connect GNU/Linux and
+**Introduction and Description:**
+
+This article is small attempt to explain how to connect GNU/Linux and
 FreeBSD using Virtual Box.
 
 So here we are going to bridge GNU/Linux(Open-SUSE) and FreeBSD.
 Remember that here BSD(guest) is installed inside Virtual Box running on
 Open-SUSE(host).
 
-| **Prerequisite:**
-|  --------------------
-|  I assume that you have successfully installed FreeBSD on the virtual
+**Prerequisite:**
+
+I assume that you have successfully installed FreeBSD on the virtual
 box and you know a bit of networking. Lastly you must have enabled
 bridging in the kernel if you have recompiled it most recently (Bridging
 is enabled by-default in most generic kernels)
@@ -25,16 +25,13 @@ is enabled by-default in most generic kernels)
 So my host OS is OpenSUSE-11.3 and guest OS is FreeBSD
 8.0-RELEASE(GENERIC). My Virtual Box version is: 3.2.6\_OSE r63112.
 
-| **Configuring Open-SUSE:**
-|  --------------------
+**Configuring Open-SUSE:**
 
-Login as root and type:
+Login as root and type::
 
-``# ifconfig -a``
+	ifconfig -a
 
-the output will be similar to this one:
-
-    ::
+the output will be similar to this one::
 
         eth0            Link encap:Ethernet HWaddr 00:1B:FC:1E:AD:9C
                         UP BROADCAST MULTICAST MTU:1500 Metric:1
@@ -64,18 +61,17 @@ then an additional entry will be:
                         collisions:0 txqueuelen:1000
                         RX bytes:0 (0.0 b) TX bytes:212309 (207.3 Kb)
 
-| **Configuring FreeBSD:**
-|  --------------------
+
+**Configuring FreeBSD:**
 
 If you have entered the valid IP address for your guest OS which
 FreeBSD's sysinstall obviously ask for, go to your BSD box(root) and
-type:
+type::
 
 ``# ifconfig -a ``
 
-the output will be similar to this one:
+the output will be similar to this one::
 
-    ::
 
         em0:    flags=8843 metric 0 mtu 1500
             options=9b
@@ -93,8 +89,7 @@ the output will be similar to this one:
 Yes in FreeBSD your first ethernet card is called *em0* and *lo0* is
 your loop back device.
 
-| **Main configuration:**
-|  --------------------
+**Main configuration:**
 
 If you have successfully reached here, I assure you the rest is cake
 walk :)
@@ -112,38 +107,37 @@ have IP of 192.168.1.14(you can make out from the output above). If
 ``em0`` have valid IP, logout of the BSD(we are not going to touch it
 until we setup the bridge)
 
-| Login as *root* to Open-SUSE. Now we have to create a bridge, and then
+Login as *root* to Open-SUSE. Now we have to create a bridge, and then
 add the two interfaces(eth0 and vboxnet0) to it. Remember ``em0`` is the
 name given by BSD to its NIC, in Linux term, it is called ``eth0``.
 ``em0`` get converted to ``vboxnet0`` in Linux because virtual Box
-created
-|  it(which is running on Open-SUSE). we can't bridge ``eth0`` and
+created it(which is running on Open-SUSE). we can't bridge ``eth0`` and
 ``em0`` in this case as ``em0`` is virtual NIC(in BSD term). Linux see's
 ``em0`` as ``vboxnet0``
 
-| so
-|  ``em0`` = ``vboxnet0``
+so
+
+  ``em0`` = ``vboxnet0``
 
 if we create second NIC in Virtual Box, then BSD will see it as ``em1``
 whereas Linux will see it as ``vboxnet1`` and so on.
 
-| ``em1 = vboxnet1``
-|  ``em2 = vboxnet2``
-|  .
-|  .
-|  .
-|  ``em(n) = vboxnet(n)``
+``em1 = vboxnet1``
+``em2 = vboxnet2``
+  .
+  .
+  .
+  ``em(n) = vboxnet(n)``
 
 More practical scenario can be a real system with two NIC's(say ``eth0``
 and ``eth1``). Both NIC's are connected to two separate networks. And we
 have to *bridge* both the NIC's, eventually we will bridge the networks.
 
-| **Creating Bridge:**
-|  --------------------
+**Creating Bridge:**
 
-type:
+type::
 
-``# brctl addbr br0``
+	brctl addbr br0
 
 here ``br0`` is the name of our bridge. If you check by typing
 ``ipconfig -a``. You will have an additional entry like.
@@ -161,13 +155,13 @@ here ``br0`` is the name of our bridge. If you check by typing
 Please ignore the IP address entry. We haven't assigned IP to our
 ``br0``
 
-Now to add ``eth0`` to ``br0`` type:
+Now to add ``eth0`` to ``br0`` type::
 
-``# brctl addif br0 ethO``
+	brctl addif br0 ethO
 
-and then add ``vboxnet0`` to ``br0`` by typing:
+and then add ``vboxnet0`` to ``br0`` by typing::
 
-``# brctl addif br0 vboxnet0``
+	brctl addif br0 vboxnet0
 
 And now... because we have connected the two ethernet cards together,
 they now form one large subnet. We are actually on one subnet, namely
@@ -211,9 +205,9 @@ with the IP address 192.168.1.14
 
 *Good luck!*
 
-| **Ref:**
-|  --------------------
-|  1) bridge-utils-1.2 HOWTO, By: Lennert Buytenhek
-|  2) Linux Bridge+Firewall Mini-HOWTO version 1.2.0 By: Peter Breuer
+**Ref:**
+
+  1) bridge-utils-1.2 HOWTO, By: Lennert Buytenhek
+  2) Linux Bridge+Firewall Mini-HOWTO version 1.2.0 By: Peter Breuer
 (ptb@it.uc3m.es)
-|  3) Filtering Bridges, By: Alex Dupre(ale@FreeBSD.org)
+  3) Filtering Bridges, By: Alex Dupre(ale@FreeBSD.org)

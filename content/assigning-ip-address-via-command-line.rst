@@ -6,24 +6,28 @@ Assigning IP address via Command line
 :tags: command line, dns, gateway, ifconfig, linux, netmask, route
 :slug: assigning-ip-address-via-command-line
 
-| Sometimes, assigning IP address using command line is much more easier
-than
-|  using Network manager applet, here are the SYNTAX with examples:
+Sometimes, assigning IP address using command line is much more easier than using 
+Network manager applet, here are the SYNTAX with examples.
 
 **Assigning IP address:**
 
-| SYNTAX:
-|  ifconfig <INTERFACE> <IP-ADDRESS> netmask <NETMASK>
+SYNTAX::
 
-| example:
-|  ifconfig eth0 192.168.1.11 netmask 255.255.255.0
-|  **Adding gateway:**
+ ifconfig <INTERFACE> <IP-ADDRESS> netmask <NETMASK>
 
-| SYNTAX:
-|  route add default gw <GATEWAY-IP> <INTERFACE>
+example::
 
-| example:
-|  route add default gw 192.168.1.1 eth0
+  ifconfig eth0 192.168.1.11 netmask 255.255.255.0
+
+**Adding gateway:**
+
+SYNTAX::
+
+  route add default gw <GATEWAY-IP> <INTERFACE>
+
+example::
+
+  route add default gw 192.168.1.1 eth0
 
  
 
@@ -31,11 +35,13 @@ than
 
 Add following line(s) in your /etc/resolv.conf file
 
-| SYNTAX:
-|  nameserver <DNS-IP>
+SYNTAX::
 
-| example:
-|  nameserver 10.101.1.12
-|  nameserver 10.101.1.13
+  nameserver <DNS-IP>
+
+example::
+
+ nameserver 10.101.1.12
+ nameserver 10.101.1.13
 
  

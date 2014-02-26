@@ -8,16 +8,12 @@ Checking the status of dd command
 
 | A simple way to find the status(size copied) of dd command.
 |  Assuming you are running a single instance of dd, for eg, say on
-terminal 1 you are running this:
-
-::
+terminal 1 you are running this::
 
     dd if=/dev/zero of=output.img bs=8k count=128k
 
 The above command will take around 15 secs to create a 1GB+ image, to
-know the status of dd open a new terminal(say, terminal 2) and type:
-
-::
+know the status of dd open a new terminal(say, terminal 2) and type::
 
     kill -USR1 `pgrep ^dd$`
 

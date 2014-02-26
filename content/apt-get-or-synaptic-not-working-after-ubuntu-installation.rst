@@ -7,22 +7,14 @@ apt-get or synaptic not working after ubuntu installation !
 :slug: apt-get-or-synaptic-not-working-after-ubuntu-installation
 
 Many times you might have faced this problem.With Ubuntu live CD or
-fresh installation there is \ *additional drives* installer which runs
-in background.
+fresh installation there is  additional drives installer which runs in background.
 
-You get the error as \ *'Could not get lock /var/lib/dpkg/lock '* .The
-simple solution to this is to kill that background process.The process
-responsible for locking is \ *jockey('additional drivers').*
+You get the error as `Could not get lock /var/lib/dpkg/lock` .The simple solution 
+to this is to kill that background process.The process responsible for locking is jockey('additional drivers')::
 
-*
-*
 
     killall jockey-gtk      (for ubuntu)
 
-    killall jockey-backend
-
-    and
-
-    killall jockey-kde    (for kubuntu)
+    killall jockey-backend && killall jockey-kde    (for kubuntu)
 
 Thats all.Now open your synaptic/software-manager to install packages.

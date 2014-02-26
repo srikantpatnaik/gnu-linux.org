@@ -8,8 +8,8 @@ Different windows in different Desktops, KDE !
 
 Unlike GNOME, KDE shows all windows on all desktops. There is simple
 setting to surpass this. Right click on any window on panel( minimized
-or open) and select *Task Manager Settings .*\ From the
-*General*\ option go to *Filters*\ and check two options viz. *Only show
-tasks from current screen*\ & *Only show tasks from current desktop .*
+or open) and select Task Manager Settings . From the
+General option go to Filters and check two options viz. Only show
+tasks from current screen & Only show tasks from current desktop .
 
 Thats it. Now you can have different windows on different desktops. 

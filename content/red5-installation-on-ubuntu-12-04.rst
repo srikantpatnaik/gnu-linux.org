@@ -86,5 +86,4 @@ Enjoy!!!!
 
 .. |red5| image:: http://gnu-linux.org/wp-content/uploads/2013/05/red5-300x216.png
    :target: http://gnu-linux.org/wp-content/uploads/2013/05/red5.png
-.. |red5| image:: http://gnu-linux.org/wp-content/uploads/2013/05/red51-300x216.png
-   :target: http://gnu-linux.org/wp-content/uploads/2013/05/red51.png
+

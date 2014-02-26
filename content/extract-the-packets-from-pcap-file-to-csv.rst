@@ -13,7 +13,8 @@ your database server for some graph based analysis or to be spreed
 sheet.
 
 **# tshark -r traffic.pcap -T fields -e ip.src -E separator=, -E
-occurrence=f > traffic.csv**\ *
+occurrence=f > traffic.csv**
+
  -r: to read the .pcap file.
  -T fields: different fields which are needed to capture.
  -E separator: if there are multiple fields extracting separator is used
@@ -22,7 +23,7 @@ to differentiate.
 multiple occurrence, 'f' is for first
  and it store the fields inside the .csv file.*
 
-| Multiple fields
-|  ***# tshark -r traffic.pcap -T fields -e ip.src -e frame.len -e
-ip.proto -E separatorr=, -E occurrence=f > traffic.csv***
-|  It extracts multiple fields from .pcap file.
+ Multiple fields
+  ***# tshark -r traffic.pcap -T fields -e ip.src -e frame.len -e ip.proto -E separatorr=, -E occurrence=f > traffic.csv***
+
+It extracts multiple fields from .pcap file.
