@@ -26,9 +26,8 @@ Creating an Android project
 
 Provided you have an *android-sdk* in your path.
 
-**Syntax**
+**Syntax**::
 
-.. code:: src
 
     android create project \
         --name project-name \
@@ -37,9 +36,7 @@ Provided you have an *android-sdk* in your path.
         --package package-name \
         --activity name-of-your-main-activity
 
-**Example**
-
-.. code:: src
+**Example** ::
 
     android create project \
         --name HelloAndroid \
@@ -67,16 +64,12 @@ Building an apk
 
    <div class="outline-text-2" id="text-2">
 
-Building an apk is also simple, type
-
-.. code:: src
+Building an apk is also simple, type::
 
     android update project --path . --target android-15 --subprojects
 
 which will create a necessary ``build.xml`` file required for ``ant``,
-and run
-
-.. code:: src
+and run::
 
     ant debug
 
@@ -119,21 +112,16 @@ Starting emulator
 
 Start the AVD using,
 
-**Syntax**
+Syntax::
 
-.. code:: src
 
     emulator -avd name-of-your-avd
 
-**Example**
-
-.. code:: src
+Example::
 
     emulator -avd test
 
-If you want to list all your virtual disks, type
-
-.. code:: src
+If you want to list all your virtual disks, type::
 
     android list avd
 
@@ -158,15 +146,11 @@ Installing an apk
 
 To install an apk, visit your project directory and run
 
-**Syntax**
-
-.. code:: src
+**Syntax** ::
 
     adb install path-to-your-apk
 
-**Example**
-
-.. code:: src
+**Example**::
 
     adb install bin/com.hello.android.MainActivity.apk
 
@@ -191,15 +175,11 @@ Launching your app
 
 To test your app, type
 
-**Syntax**
-
-.. code:: src
+Syntax::
 
     adb shell am start -a android.intent.action.MAIN -n your-package-name/.your-main-activity-name
 
-**Example**
-
-.. code:: src
+Example::
 
     adb shell am start -a android.intent.action.MAIN -n com.hello.android/.MainActivity
 

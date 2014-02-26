@@ -13,11 +13,9 @@ player resulting in annoying background noise.
 |song loaded in audacity|
 
 To remove such constant noise from your songs or recordings we have a
-great cross platform tool called '**\ `Audacity`_\ **\ ' .I will
-demonstrate how to remove noise from   audio files in Ubuntu Linux
-Operating System.
+great cross platform tool called `Audacity`.
 
-\ **Steps to follow:**\ 
+**Steps to follow:**
 
 1. Install 'Audacity' from package manager.Go to file->open and select
 the audio file.
@@ -55,8 +53,6 @@ bitrate you want and select OK.
 Enjoy editing :)
 
  
-
-.. _Audacity: http://audacity.sourceforge.net/
 
 .. |song loaded in audacity| image:: http://gnu-linux.org/wp-content/uploads/2011/12/zoom.png
 .. |press zoom on audacity| image:: http://gnu-linux.org/wp-content/uploads/2011/12/zoom2-300x168.png

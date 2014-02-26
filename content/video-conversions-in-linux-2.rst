@@ -110,7 +110,6 @@ Let's see few examples :
 
         -sameq -> same quality
 
-::
 
 There are tons of other options available with *ffmpeg* and
 *mencoder*.Please use *man pages*

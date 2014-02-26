@@ -18,9 +18,9 @@ GNU/Lnux, bootSplash theme path is /etc/bootsplash/.
 
 The bootsplash Utility version is **bootsplash-3.1.tar.bz2**
 
- --------------------------------------------------
- Patching the Bootsplash
- --------------------------------------------------
+--------------------------------------------------
+Patching the Bootsplash
+--------------------------------------------------
 
       tas_devil@zyro:~$ tar -xjf linux-2.6.36.tar.bz2
       tas_devil@zyro:~$ cd linux-2.6.36
@@ -44,9 +44,9 @@ The bootsplash Utility version is **bootsplash-3.1.tar.bz2**
       patching file include/linux/console\_struct.h
       patching file include/linux/fb.h
 
- --------------------------------------------------
- Patching the kernel source(optional)
- --------------------------------------------------
+--------------------------------------------------
+Patching the kernel source(optional)
+--------------------------------------------------
 
 
       tas_devil@zyro:~$ patch -p1 < patch-2.6.36.2
@@ -92,35 +92,27 @@ now create an initial ram disk image
 
 this will create /boot/initrd.gz
 
-**
- --------------------------------------------------
- Compiling Bootsplash utility
- --------------------------------------------------
-**
 
-     tas\_devil@zyro:~$ tar -xjf bootsplash-3.1.tar.bz2
+--------------------------------------------------
+Compiling Bootsplash utility
+--------------------------------------------------
+
+
+      tas\_devil@zyro:~$ tar -xjf bootsplash-3.1.tar.bz2
       tas\_devil@zyro:~$ cd bootsplash-3.1/Utilities
       tas\_devil@zyro:~$ make splash
       gcc -Os -Wall -I/usr/include/freetype2 -L/usr/lib splash.c -o
-    splash
-      gcc -Os -Wall -I/usr/include/freetype2 -L/usr/lib splashpbm.c -o
-    splashpbm
-      gcc -Os -Wall -I/usr/include/freetype2 -L/usr/lib
-    fbresolution.c-o fbresolution
-      gcc -Os -Wall -I/usr/include/freetype2 -c -o fbtruetype.o
-    fbtruetype.c
-      gcc -Os -Wall -I/usr/include/freetype2 -c -o
-    fbtruetype-messages.o fbtruetype-messages.c
+      splash
+      gcc -Os -Wall -I/usr/include/freetype2 -L/usr/lib splashpbm.c -o splashpbm
+      gcc -Os -Wall -I/usr/include/freetype2 -L/usr/lib fbresolution.c -o fbresolution
+      gcc -Os -Wall -I/usr/include/freetype2 -c -o fbtruetype.o fbtruetype.c
+      gcc -Os -Wall -I/usr/include/freetype2 -c -o fbtruetype-messages.o fbtruetype-messages.c
       gcc -Os -Wall -I/usr/include/freetype2 -c -o console.o console.c
       gcc -Os -Wall -I/usr/include/freetype2 -c -o ttf.o ttf.c
       gcc -Os -Wall -I/usr/include/freetype2 -c -o luxisri.o luxisri.c
-      gcc -Os -Wall -I/usr/include/freetype2 -L/usr/lib -o fbtruetype
-    -L/usr/lib fbtruetype.o fbtruetype-messages.o console.o ttf.o
-    luxisri.o -lfreetype -lm
-      gcc -Os -Wall -I/usr/include/freetype2 -c -o fbmngplay.o
-    fbmngplay.c
-      gcc -Os -Wall -I/usr/include/freetype2 -c -o fbmngplay-messages.o
-    fbmngplay-messages.c
+      gcc -Os -Wall -I/usr/include/freetype2 -L/usr/lib -o fbtruetype -L/usr/lib fbtruetype.o fbtruetype-messages.o console.o ttf.o luxisri.o -lfreetype -lm
+      gcc -Os -Wall -I/usr/include/freetype2 -c -o fbmngplay.o fbmngplay.c
+      gcc -Os -Wall -I/usr/include/freetype2 -c -o fbmngplay-messages.o fbmngplay-messages.c
       gcc -Os -Wall -I/usr/include/freetype2 -c -o mng.o mng.c
       .
       .
@@ -146,39 +138,32 @@ now make an initial ramdisk to support ext4 file system(optional)
 
     root@zyro:# mkinitrd -k 2.6.36.2-smp -m ext4 -f ext4
 
- **
- ------------------------------------------------------------
- Insert these lines in GRUB configuration file
- ------------------------------------------------------------
-**
-  GRUB(legacy) entry
 
-     .
-      .
-      .
+------------------------------------------------------------
+ Insert these lines in GRUB configuration file
+------------------------------------------------------------
+
+GRUB(legacy) entry
+
+
+      
       title Slackware13.0-2.6.36.2-smp
       root (hd0,4)
       kernel /boot/vmlinuz root=/dev/hdb5 ro splash=silent vga=791
       initrd /boot/initrd.gz
-      .
-      .
-      .
 
-**
- REBOOT ...
-**
 
- After rebooting, if you see the bootsplash, you can move forward to
-  insert progress bar in to the splash screen.
+REBOOT
 
-**
- ------------------------------------------------------------
- Modifying rc.0,rc.S, rc.M, rc.6(link to rc.0)
- ------------------------------------------------------------
-**
+After rebooting, if you see the bootsplash, you can move forward to insert progress bar in to the splash screen.
 
- You need to append below lines at appropriate places so that the
-  status of progress bar matches with system boot process.
+
+----------------------------------------------------------
+Modifying rc.0,rc.S, rc.M, rc.6(link to rc.0)
+----------------------------------------------------------
+
+
+You need to append below lines at appropriate places so that the status of progress bar matches with system boot process.
 
 Insert below lines in /etc/rc.d/rc.0
 
@@ -191,7 +176,7 @@ Insert below lines in /etc/rc.d/rc.S
      # Check for splash availability
       SPLASHSCREEN="no"
       [[ -x /usr/bin/splash && -e /proc/splash ]] && export
-    SPLASHSCREEN="yes"
+      SPLASHSCREEN="yes"
 
      progressbar() {
       echo "show $(( 65534 \* $1 / 100 ))" > /proc/splash
@@ -223,7 +208,7 @@ Insert below lines in /etc/rc.d/rc.M
      # Check for splash availability
       SPLASHSCREEN="no"
       [[ -x /usr/bin/splash && -e /proc/splash ]] && export
-    SPLASHSCREEN="yes"
+     SPLASHSCREEN="yes"
       progressbar() {
       echo "show $(( 65534 \* $1 / 100 ))" > /proc/splash
       }
@@ -263,27 +248,20 @@ Insert below lines in /etc/rc.d/rc.M
       (sleep 10 ; echo "verbose") > /proc/splash &
       fi
 
-**
- ----------------------------------------------------------
+
+----------------------------------------------------------
  Download links:
- ----------------------------------------------------------
-**
+----------------------------------------------------------
 
- 1) Kernel source
-  http://www.kernel.org/
-  (Only if you want to upgrade your kernel version)
 
- 2) Bootsplash patch
-  http://x-softsi.com.br
-  (remember to download a patch according to your Kernel version you
-are
-  upgrading to)
+1) Kernel source  http://www.kernel.org/
+   (Only if you want to upgrade your kernel version)
 
- 3) A bootsplash theme
-  http://kde-look.org/
+2) Bootsplash patch
+   http://x-softsi.com.br
+   (remember to download a patch according to your Kernel version you are upgrading to)
 
- 4) BootSplash Utility
-  http://www.bootsplash.org/
+3) A bootsplash theme  http://kde-look.org/
 
-**
-**
+4) BootSplash Utility  http://www.bootsplash.org/
+

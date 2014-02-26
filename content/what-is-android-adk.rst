@@ -10,10 +10,10 @@ This summer google announced in its third I/O about its ambitious
 project, interfacing every single hardware in your house to android
 device.
 
-| The **Android Open Accessory Development Kit (ADK)** is USB
+The **Android Open Accessory Development Kit (ADK)** is USB
 based implementation and connects to Arduino (open source hardware)  or
 similar accessories .
-| 
+
 
 |image0|
 

@@ -64,15 +64,10 @@ electronic design & simulation.Fedora has some support to ARM devices
 too.
 
  
+Number Two:  (UBUNTU)
+~~~~~~~~~~~~~~~~~~~~~
 
- 
-
- 
-
-\ **Number Two:  (UBUNTU)**\ 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-|image3|           The most beloved distribution of recent times.Based
+|image3|\ The most beloved distribution of recent times.Based
 on rock solid \ `Debian`_ (deb).`Ubuntu`_ release twice in a year.This
 frequent  distribution combined with large hardware support makes this a
 must go for all.Ubuntu comes pre installed with many laptops & netbooks.
@@ -86,8 +81,8 @@ new breed of Gnome & KDE.
 
  
 
-\ **Number ONE:  (Linux Mint)**\ 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Number ONE:  (Linux Mint)
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
 |image4|\ This is the best Linux Distribution for any newbie or
 techie.\ `Linux Mint`_ is based on Ubuntu Linux.So all goodies are
