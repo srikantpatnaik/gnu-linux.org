@@ -44,16 +44,12 @@ like `github.com`_ and `gitorious.org`_, or you can create your own
 git-server.
 
 If you are having a debian-based distro, you can install **git** by
-typing
-
-.. code:: src
+typing::
 
     sudo apt-get install git
 
 on red-hat based distro like fedora, mandriva etc., you can install it
-by typing
-
-.. code:: src
+by typing::
 
     yum install git
 

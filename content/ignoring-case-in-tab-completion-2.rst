@@ -9,13 +9,13 @@ Ignoring Case in TAB-Completion
 By Default TAB-Completion is not useful if the name of file or directory
 starts with an UpperCase. You can make your Shell totally ignore the
 case(in-case sensitive) by adding following entry in /etc/inputrc
-file(you need root access).
+file(you need root access) ::
 
     set completion-ignore-case on
 
 Save the file and restart your Shell. From now onwards TAB-completion
 will completely ignore the case for file or directory.
 
-for complete man page type:
+for complete man page type::
 
     man readline

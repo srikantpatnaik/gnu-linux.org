@@ -24,97 +24,110 @@ mailbox. Some MDA are: Dovecot,Procmail
 3. MUA ----> Mail User Agent, email client, It can be user web browser
 or Thunderbird, .
 
-| Prerequisites-:
-|  Your DNS should have MX record entry for your mail server.
-|  Firewall and selinux should be disabled.
-|  # service iptables stop
-|  # vim /etc/selinux/config # line number 7 edit this file to disable
-the selinux
-|  SELINUX=disabled
-|  Reboot your server
-|  # init 6
+ Prerequisites-:
+  Your DNS should have MX record entry for your mail server.
+  Firewall and selinux should be disabled.
+  # service iptables stop
+  # vim /etc/selinux/config # line number 7 edit this file to disable the selinux
+  SELINUX=disabled
+  Reboot your server
+  # init 6
 
-| If your centos server already has sendmail server remove it
-|  # yum remove sendmail
+ If your centos server already has sendmail server remove it
+  # yum remove sendmail
 
 My test scenario to configure the mail server
 
-| Hostname =mailon
-|  IP address =172.16.1.3
+ Hostname =mailon
+  IP address =172.16.1.3
 
-| I have MX record entry for my mail server in my DNS server.
-|  **
- Installation**
+ I have MX record entry for my mail server in my DNS server.
 
-# yum install postfix -y
+Installation::
 
-| **Configuration**
-|  Open the main.cf file in any text editor, I prefer vim
-|  # vim /etc/postfix/main.cf
+	yum install postfix -y
 
-**myhostname = servername.mail.com ## edit the hostname line# 75
- mydomain = mail.com ## edit the domain name line# 85
- myorigin = $myhostname ## comment out the line# 99
- inet\_interfaces = all ## change to all line# 119
- mydestination = $myhostname, localhost.$mydomain, localhost, $mydomain
-## include $mydomain at the end line# 166
- mynetwork = 172.16.0.0/16, 127.0.0.0/8 ## include your network ip line#
-268
- home\_mailbox = Maildir/ ## comment out line 424 to enable inbox
-directory**
+**Configuration**
 
-**Start the Postfix service**
+Open the main.cf file in any text editor, I prefer vim::
 
-| # service postfix start
-|  # chkconfig postfix on ## to start the service on startup
+  vim /etc/postfix/main.cf
 
-**Testing Postfix**
 
-| [root@servername ~]# **telnet localhost 25**
-|  Trying ::1...
-|  Connected to local host
-|  Escape character is '^]'.
-|  220 server.mail.com ESMTP Postfix
+myhostname = servername.mail.com ## edit the hostname line# 75
+mydomain = mail.com ## edit the domain name line# 85
+myorigin = $myhostname ## comment out the line# 99
+inet_interfaces = all ## change to all line# 119
 
-**ehlo localhost**
+mydestination = $myhostname, localhost.$mydomain, localhost, $mydomain
+include $mydomain at the end line# 166
 
-| 250-servername.mail.com
-|  250-PIPELINING
-|  250-SIZE 10240000
-|  250-VRFY
-|  250-ETRN
-|  250-ENHANCEDSTATUSCODES
-|  250-8BITMIME
-|  250 DSN
+mynetwork = 172.16.0.0/16, 127.0.0.0/8 ## include your network ip line#
+268 home_mailbox = Maildir ## comment out line 424 to enable inbox
+directory
 
-| **mail from: mailuser**
-|  mail from: mailuser
-|  **rcpt to: mailuser**
-|  250 2.1.5 Ok
-|  **data**
-|  354 End data with .
-|  **hello amit this the gnu-linux
- .**
-|  250 2.0.0 Ok: queued as 4C8F91E00F5
-|  **quit**
-|  221 2.0.0 Bye
-|  Connection closed by foreign host.
+Start the Postfix service::
+
+ service postfix start
+ chkconfig postfix on ## to start the service on startup
+
+Testing Postfix::
+
+	[telnet localhost 25
+ 
+	 Trying ::1...
+	 Connected to local host
+     Escape character is ']'.
+	 220 server.mail.com ESMTP Postfix
+
+echo localhost::
+
+     250-servername.mail.com
+     250-PIPELINING
+     250-SIZE 10240000
+     250-VRFY
+     250-ETRN
+     250-ENHANCEDSTATUSCODES
+     250-8BITMIME
+     250 DSN
+
+Mail from mailuser mail from: mailuser
+
+**srcpt to: mailuser**
+
+  250 2.1.5 Ok
+
+  **data**
+
+  354 End data with .
+
+  **hello amit this the gnu-linux**
+
+  250 2.0.0 Ok: queued as 4C8F91E00F5
+
+  **quit**
+
+  221 2.0.0 Bye
+
+  Connection closed by foreign host.
 
 **Check the mail in user Maildir**
 
-| [root@mailon ~]# cd /home/mailuser/Maildir/new
-|  [root@mailon new]# vim 1373093244.Vfd03I20023M85510.mailon
-|  Return-Path:
-|  X-Original-To: mailuser
-|  Delivered-To: mailuser@servername.mail.com
-|  Received: from localhost (localhost [IPv6:::1])
-|  by servername.mail.com (Postfix) with ESMTP id 4C8F91E00F5
-|  for ; Sat, 6 Jul 2013 12:15:24 +0530 (IST)
-|  Message-Id:
-|  Date: Sat, 6 Jul 2013 12:15:24 +0530 (IST)
-|  From: mailuser@servername.mail.com
-|  To: undisclosed-recipients:;
-|  hello amit this the gnu-linux
+.. raw:: html
+
+  [root@mailon ~]# cd /home/mailuser/Maildir/new
+  [root@mailon new]# vim 1373093244.Vfd03I20023M85510.mailon
+  Return-Path:
+  X-Original-To: mailuser
+  Delivered-To: mailuser@servername.mail.com
+  Received: from localhost (localhost [IPv6:::1])
+  by servername.mail.com (Postfix) with ESMTP id 4C8F91E00F5
+  for ; Sat, 6 Jul 2013 12:15:24 +0530 (IST)
+  Message-Id:
+  Date: Sat, 6 Jul 2013 12:15:24 +0530 (IST)
+  From: mailuser@servername.mail.com
+  To: undisclosed-recipients:;
+  hello amit this the gnu-linux
 
 If you got the mail it means postfix is working now.
 

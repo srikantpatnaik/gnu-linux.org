@@ -6,8 +6,9 @@ Kubuntu Active is Activated
 :tags: kubuntu active, Linux on ARM, plasma active
 :slug: kubuntu-active-is-activated
 
-| Author:jriddell
-|  The first Ubuntu flavour for tablets is now making daily builds. We
+Author:jriddell
+
+The first Ubuntu flavour for tablets is now making daily builds. We
 even got our first bug reports from our localy Plasma Active upstreams.
 Images are for i386 only for now, ARMv7 should be added when we know
 it's a bit more stable and have testers.\ `Read more`_

@@ -18,7 +18,7 @@ Working with chroot environment
    <div class="outline-text-3" id="text-1">
 
 As its man page says, "*it is used to run commands or an interactive
-shell with special root directory*\ ". It provides an environment to
+shell with special root directory* ". It provides an environment to
 test new packages in a secured way without touching an actual system. It
 can be called as a virtual system with a new as an root(/) directory.
 
@@ -87,32 +87,24 @@ Debian chroot environment using **debootstrap** or ``rootstock``, both
 are available for Ubuntu systems. In this post I will use debootstrap to
 create a chroot environment.
 
-Install **debootstrap** using,
-
-.. code:: src
+Install **debootstrap** using ::
 
     sudo apt-get install debootstrap
 
 We can specify a system architecture, a suite(release name) and a mirror
 to download from in the ``debootstrap`` parameter.
 
-The syntax is as follows,
-
-.. code:: src
+The syntax is as follows ::
 
     debootstrap --arch ARCHITECTURE SUITE YOUR-ROOT-DIRECTORY MIRROR
 
 for example, if I want arch to be ``i686`` of Ubuntu 12.04(precise) and
 my root directory is **precise-chroot/** with mirror as
-http://archive.ubuntu.com/ubuntu, then create directory for chroot
-
-.. code:: src
+http://archive.ubuntu.com/ubuntu, then create directory for chroot ::
 
     mkdir precise-chroot 
 
-and create a chroot environment using debootstrap
-
-.. code:: src
+and create a chroot environment using debootstrap::
 
     debootstrap --arch i686 precise precise-chroot http://archive.ubuntu.com/ubuntu
 
@@ -138,9 +130,7 @@ this will create a chroot environment for Ubuntu 12.04, from the mirror.
    <div class="outline-text-3" id="text-4">
 
 Once all the file are downloaded, we can chroot into precise-chroot/
-directory using
-
-.. code:: src
+directory using::
 
     sudo chroot precise-chroot /bin/bash
 

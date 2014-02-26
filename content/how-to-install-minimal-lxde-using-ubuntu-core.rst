@@ -19,26 +19,20 @@ Steps to perform
 #. Download ubuntu 12.04 core image from `link`_
 
 #. Now extract the core file system to some directory by issuing
-   following command
+   following command::
 
-   .. code:: literal-block
 
        sudo tar -xvpzhf /tmp/ubuntu-core-12.04.1-core-armhf.tar.gz
 
-#. | chroot into the directory with the help of qemu-arm-static and
-   update /etc/apt/sources.list
-   |  with universe & multiverse repositories, a sample content is as
-   follows
-
-   .. code:: literal-block
+#. chroot into the directory with the help of qemu-arm-static and
+   update `/etc/apt/sources.list` with universe & multiverse repositories, a sample content is as
+   follows::
 
        deb http://ports.ubuntu.com/ubuntu-ports/ precise main universe multiverse restricted
        deb-src http://ports.ubuntu.com/ubuntu-ports/ precise main universe multiverse restricted
 
 #. Now do apt-get update and followed by installation of following
-   packages
-
-   .. code:: literal-block
+   packages::
 
        apt-get install vim.tiny sudo ssh net-tools ethtool wireless-tools lxde xinit xorg \
                        network-manager iputils-ping rsyslog alsa-utils

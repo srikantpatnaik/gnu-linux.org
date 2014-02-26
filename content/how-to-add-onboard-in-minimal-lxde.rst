@@ -8,7 +8,8 @@ How to add onboard in minimal lxde ?
 
 onboard is  popular new age virtual keyboard in ubuntu environment. It
 sometimes won't work  properly in minimal lxde setup. The reason is
-missing python dependency *python-gi-cairo.
-*\ So install this package along with onboard :
+missing python dependency *python-gi-cairo*
+
+Install this package along with onboard ::
 
     apt-get install python-gi-cairo onboard

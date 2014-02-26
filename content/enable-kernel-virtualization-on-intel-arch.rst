@@ -7,17 +7,14 @@ Enable Kernel virtualization on Intel/AMD arch
 :slug: enable-kernel-virtualization-on-intel-arch
 
 To check if the hardware supports Virtualizaton Technology(VT), open a
-terminal and type
+terminal and type::
 
-.. code:: src
 
     egrep '(vmx|svm)' /proc/cpuinfo
 
 if you can see some output, then your hardware supports VT.
 
-Next to enable kernel modules, type
-
-.. code:: src
+Next to enable kernel modules, type::
 
     sudo modprobe kvm_intel
     sudo modprobe kvm

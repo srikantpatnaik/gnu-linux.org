@@ -1,7 +1,7 @@
 How to install cyanogeod 7.1 on zte blade a.k.a dell xcd35 ?
 ############################################################
 :date: 2011-10-26 03:59
-:author: srikant
+:author: Srikant Patnaik
 :category: android
 :tags: android, android 2.3.7, ClockworkMod, cyanogenmod 7.1, dell xcd35, gingerbread, ROM Manager, zte blade
 :slug: how-to-install-cyanogeod-7-1-on-zte-blade-a-k-a-dell-xcd35

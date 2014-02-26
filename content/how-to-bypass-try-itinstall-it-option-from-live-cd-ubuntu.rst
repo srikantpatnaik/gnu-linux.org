@@ -16,33 +16,32 @@ Kubuntu here.
 
  
 
-Download the latest Ubuntu iso file.
+Download the latest Ubuntu iso file
 
-1. Mount it using option :
+1. Mount it using option ::
 
     sudo  mkdir /mnt/kubuntu && mount -o loop kubuntu-11.10.iso
 
-2.  Create a directory at
+2.  Create a directory at::
 
     sudo /mnt/kubuntu-rw .
 
 3. Copy the content of /mnt/kubuntu to /mnt/kubuntu-rw .To edit some
-files.We can't edit files inside the mounted content at /mnt/kubuntu.
+files.We can't edit files inside the mounted content at /mnt/kubuntu::
 
     sudo cp -R  /mnt/kubuntu  /mnt/kubuntu-rw
 
-4. Goto /mnt/kubuntu-rw/isolinux directory.
+4. Goto /mnt/kubuntu-rw/isolinux directory::
 
     cd  /mnt/kubuntu-rw/isolinux
 
-5. Change the permission of file isolinux.cfg to u+w.
+5. Change the permission of file isolinux.cfg to u+w ::
 
      sudo chmod u+x isolinux.cfg
 
 6. Edit the file isolinux.cfg. Replace all the content of the file with
-given code.
-
-     
+given code::
+   
 
     ::
 
@@ -77,8 +76,7 @@ up by two directories.
 
     cd ../../
 
-    Then run this command.This will create the new iso file in /mnt
-    directory.
+    Then run this command.This will create the new iso file in /mnt directory::
 
     #. ::
 

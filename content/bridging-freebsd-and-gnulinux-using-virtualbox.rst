@@ -120,14 +120,14 @@ so
   ``em0`` = ``vboxnet0``
 
 if we create second NIC in Virtual Box, then BSD will see it as ``em1``
-whereas Linux will see it as ``vboxnet1`` and so on.
+whereas Linux will see it as ``vboxnet1`` and so on 
 
-``em1 = vboxnet1``
-``em2 = vboxnet2``
-  .
-  .
-  .
-  ``em(n) = vboxnet(n)``
+.. raw:: html
+
+	em1 = vboxnet1
+	em2 = vboxnet2
+
+    em(n) = vboxnet(n)
 
 More practical scenario can be a real system with two NIC's(say ``eth0``
 and ``eth1``). Both NIC's are connected to two separate networks. And we
@@ -140,9 +140,7 @@ type::
 	brctl addbr br0
 
 here ``br0`` is the name of our bridge. If you check by typing
-``ipconfig -a``. You will have an additional entry like.
-
-    ::
+``ipconfig -a``. You will have an additional entry like  ::
 
         br0       Link encap:Ethernet  HWaddr 00:1B:FC:1E:AD:9C  
                   inet addr:192.168.1.11  Bcast:192.168.1.255  Mask:255.255.255.0
@@ -152,8 +150,7 @@ here ``br0`` is the name of our bridge. If you check by typing
                   collisions:0 txqueuelen:0 
                   RX bytes:0 (0.0 b)  TX bytes:216180 (211.1 Kb)
 
-Please ignore the IP address entry. We haven't assigned IP to our
-``br0``
+Please ignore the IP address entry. We haven't assigned IP to our ``br0``
 
 Now to add ``eth0`` to ``br0`` type::
 
@@ -169,31 +166,31 @@ they now form one large subnet. We are actually on one subnet, namely
 [``eth0 + vboxnet0``\ ] in disguise; we will only deal with ``br0`` from
 now on. Because we are only on one subnet, so we only need one IP
 address for the bridge. This address will be assigned to ``br0``.
-``eth0`` and ``eth1`` should not have IP addresses allocated to them.
+``eth0`` and ``eth1`` should not have IP addresses allocated to them ::
 
-`` # ifconfig eth0 0.0.0.0 # ifconfig vboxnet 0 0.0.0.0``
+	 ifconfig eth0 0.0.0.0 # ifconfig vboxnet 0 0.0.0.0
 
-and finally assign an IP to ``br0``
+and finally assign an IP to ``br0``::
 
-``# ifconfig br0 192.168.1.11``
+	ifconfig br0 192.168.1.11
 
-You can check your bridge status by typing:
+You can check your bridge status by typing::
 
-``# brctl show br0``
+	brctl show br0
 
 and you are done !
 
 check by pinging from each OS to other
 
-on BSD type:
+on BSD type::
 
-``% ping 192.168.1.11``
+	ping 192.168.1.11
 
 because the bridge is on Open-SUSE
 
-on Linux type:
+on Linux type::
 
-``$ ping 192.168.1.14``
+	ping 192.168.1.14
 
 if pinging works, congrats, you have successfully bridge the gap between
 GNU/linux and FreeBSD.
@@ -208,6 +205,5 @@ with the IP address 192.168.1.14
 **Ref:**
 
   1) bridge-utils-1.2 HOWTO, By: Lennert Buytenhek
-  2) Linux Bridge+Firewall Mini-HOWTO version 1.2.0 By: Peter Breuer
-(ptb@it.uc3m.es)
+  2) Linux Bridge+Firewall Mini-HOWTO version 1.2.0 By: Peter Breuer (ptb@it.uc3m.es)
   3) Filtering Bridges, By: Alex Dupre(ale@FreeBSD.org)

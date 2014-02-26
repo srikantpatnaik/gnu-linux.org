@@ -15,9 +15,7 @@ using linux kernel version **3.0.42+** as example and Elan Touch Screen
 patch file(patch-linux-3.0.42+\_elan\_ts.patch).
 
 Unpack and change directory to your linux kernel version you want to
-apply the patch for. I this case my kernel version is 3.0.42+
-
-.. code-block:: identifier
+apply the patch for. I this case my kernel version is 3.0.42+ ::
 
     cd linux-3.0.42+
 
@@ -25,27 +23,22 @@ I have a patch file in the ~/Downloads directory. Patch files generally
 ends with ``.patch``. This helps in differentiating them as patches.
 
 It is always recommended to do a dry run before actually applying a
-patch.
-
-.. code-block:: identifier
+patch::
 
     patch -p1 --dry-run < ~/Downloads/patch-linux-3.0.42+_elan_ts.patch
 
 #. Here ``-p1`` stands for verbosity. For more information, please refer
    comment by *Yogesh* `here`_.
+
 #. ``--dry-run`` will not actually apply a patch, but gives you an
    output as if the patch is really applied.
 
 if ``--dry-run`` applies a patch without any error message, you can go
-ahead an apply a real patch.
-
-.. code-block:: identifier
+ahead an apply a real patch ::
 
     patch -p1 < ~/Downloads/patch-linux-3.0.42+_elan_ts.patch
 
-Now if you want to remove a patch just add the flag ``-R``. For example,
-
-.. code-block:: identifier
+Now if you want to remove a patch just add the flag ``-R``. For example ::
 
     patch -R -p1 < ~/Downloads/patch-linux-3.0.42+_elan_ts.patch
 

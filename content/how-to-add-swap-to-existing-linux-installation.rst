@@ -10,26 +10,20 @@ How to add swap to existing Linux installation ?
 
    <div class="document">
 
-| In many embedded devices such as beagleboard, pandaboard, olimex etc
-Linux boots
-|  entirely from sdcard, many times we run out of RAM and obviously
-forget to add
-|  swap space during installation. The simplest way would be resizing
-the existing rootfs
-|  partition and make a new partition of desired space to accommodate
+In many embedded devices such as beagleboard, pandaboard, olimex etc
+Linux boots entirely from sdcard, many times we run out of RAM and obviously
+forget to add swap space during installation. The simplest way would be resizing
+the existing rootfs partition and make a new partition of desired space to accommodate
 swap.
 
 Add following lines to ``/etc/rc.local`` assuming you have similar nodes
-in ``/dev/`` for sdcard
-
-.. code:: literal-block
+in ``/dev/`` for sdcard::
 
     mkswap /dev/mmcblk0p3
     swapon /dev/mmcblk0p3
 
-| Here mmcblk0p3 is the newly created partition from existing ext4/ext3
-rootfs partition. This
-|  is a dirty but quick hack to add swap to your existing image.
+Here mmcblk0p3 is the newly created partition from existing ext4/ext3
+rootfs partition. This is a dirty but quick hack to add swap to your existing image::
 
 .. raw:: html
 
