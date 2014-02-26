@@ -28,10 +28,6 @@ After you enter the device shell using **adb** using::
 
     adb shell
 
-html::
-
-   <div id="outline-container-1" class="outline-3">
-
 Change to root
 ~~~~~~~~~~~~~~
 
@@ -274,17 +270,6 @@ if does not exist::
 Reboot the phone and you should have swap added with swappiness of 100.
 Read last section of `drewhill77`_ post for a brief note on swapping.
 
-.. raw:: html
-
-   </div>
-
-.. raw:: html
-
-   </div>
-
-.. raw:: html
-
-   </div>
 
 .. _drewhill77: http://androidforums.com/boost-mobile-warp-all-things-root/610449-ram-swapping-without-swapper2.html
 .. _adb: http://developer.android.com/tools/help/adb.html
