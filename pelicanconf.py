@@ -13,10 +13,29 @@ DEFAULT_LANG = u'en'
 #THEME = 'notmyidea'
 THEME = 'simple-bootstrap'
 THEME = "static/simple-bootstrap"
+
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
 CATEGORY_FEED_ATOM = None
 TRANSLATION_FEED_ATOM = None
+
+# PLUGINS: Sitemap 
+PLUGIN_PATH = "plugins"
+PLUGINS = ["sitemap"]
+
+SITEMAP = {                                                                 
+        'format': 'xml',                                                        
+        'priorities': {                                                         
+            'articles': 0.5,                                                    
+            'indexes': 0.5,                                                     
+            'pages': 0.5                                                        
+        },                                                                      
+        'changefreqs': {                                                        
+            'articles': 'daily',                                              
+            'indexes': 'daily',                                                 
+            'pages': 'daily'                                                  
+        }                                                                       
+    } 
 
 # Blogroll
 LINKS =  (('gnu-linux.org', 'http://gnu-linux.org/'),
