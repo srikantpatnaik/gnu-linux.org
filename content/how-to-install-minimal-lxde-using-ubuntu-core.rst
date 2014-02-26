@@ -34,16 +34,10 @@ Steps to perform
 #. Now do apt-get update and followed by installation of following
    packages::
 
-       apt-get install vim.tiny sudo ssh net-tools ethtool wireless-tools lxde xinit xorg \
-                       network-manager iputils-ping rsyslog alsa-utils
+       apt-get install vim.tiny sudo ssh net-tools ethtool wireless-tools lxde xinit xorg network-manager iputils-ping rsyslog alsa-utils
 
-| That's it. You have successfully installed core minimal lxde without
-any overheads of lubuntu.
-|  The entire setup should not take more than 400MB.
-
-.. raw:: html
-
-   </div>
+That's it. You have successfully installed core minimal lxde without
+any overheads of lubuntu. The entire setup should not take more than 400MB.
 
  
 

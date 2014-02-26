@@ -6,43 +6,49 @@ RED5 installation on ubuntu 12.04
 :tags: red5, red5 installation, streaming video, ubuntu red5
 :slug: red5-installation-on-ubuntu-12-04
 
-| Red5 is open source streaming server under Apache licencing. Most of
+Red5 is open source streaming server under Apache licencing. Most of
 the video conferencing tools like BigBlueButton Open Meeting uses RED5
 for the video streaming server.
-|  In this post I will explain the latest version red5-1.0 installation
+In this post I will explain the latest version red5-1.0 installation
 on ubuntu 12.04. We can also install red5 using the source by compiling
 it using ant.
 
-| Step 1. Update the repo
-|  $ sudo apt-get update
+Step 1. Update the repo ::
 
-| Step 2. Install the package. It contain all the basic libs and java
-required for the red5
-|  $ sudo apt-get install red5-server
+	 sudo apt-get update
+
+Step 2. Install the package. It contain all the basic libs and java
+required for the red5::
+
+
+	 sudo apt-get install red5-server
 
 It will take some time depends on your internet speed.
 
-| Step 3. After Installation is complete open browser and type
-|  url http://localhost:5080
+Step 3. After Installation is complete open browser and type url http://localhost:5080  ::
 
-|red5|>
+	|red5|>
 
 You will find red5 page. Now you need to install the packages to run the
 demos and to use the red5 server as streaming server.
 
-| Step 4. Download the demos
-|  $ wget http://www.red5.org/downloads/red5/1\_0/red5-1.0.0-RC1.zip
+Step 4. Download the demos ::
 
-| Step 5. unzip the file and change the directory
-|  $ unzip red5-1.0.0-RC1.zip -d red5
-|  $ cd red5
+	$ wget http://www.red5.org/downloads/red5/1\_0/red5-1.0.0-RC1.zip
 
-| Step 6. Copy the demos and installer to working directory of red5
-|  $ sudo cp -R webapps/root/demos /var/lib/red5/webapps/root/demos
-|  $ sudo cp -R webapps/installer /var/lib/red5/webapps/installer
+Step 5. unzip the file and change the directory::
+	
+	unzip red5-1.0.0-RC1.zip -d red5
+	cd red5
 
-| Step 7. Change the ownership to red5
-|  $ sudo find /var/lib/red5/webapps/ -type d -exec chown \_red5 {} \\;
+Step 6. Copy the demos and installer to working directory of red5::
+	
+	 sudo cp -R webapps/root/demos /var/lib/red5/webapps/root/demos
+	 sudo cp -R webapps/installer /var/lib/red5/webapps/installer
+
+Step 7. Change the ownership to red5::
+
+	 sudo find /var/lib/red5/webapps/ -type d -exec chown \_red5 {} \\;
 
 Step 8. Now click on install link which you find on the page open by
 above link.
@@ -60,27 +66,26 @@ list of default videos.
 If the default video starts your installation is successful. If you find
 the connection error like
 
-**163) Connections: true \| true
+ 163) Connections: true \| true
  (80550) connected?: true
  (80684) NetConnection.onStatus:
  description = No scope "oflaDemo" on this server.
  code = NetConnection.Connect.Rejected
- level = error**
+ level = error
 
-| your oflaDemo war package is not proper to solve this problem you have
-to download this package and placed it in
-|  ../red5/weapps/oflaDemo
 
 $ wget
 http://red5.googlecode.com/svn-history/r3990/snapshots/oflaDemo-r3989-java6.war
 
-| unzip the war file
-|  $ unzip oflaDemo-r3989-java6.war
+unzip the war file::
+	
+	 unzip oflaDemo-r3989-java6.war
 
-| restart the server
-|  $ sudo service red5-server restart
+restart the server::
 
-Refresh the page and you will find the video running ...
+	sudo service red5-server restart
+
+Refresh the page and you will find the running video. 
 
 Enjoy!!!!
 

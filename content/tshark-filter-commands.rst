@@ -55,8 +55,7 @@ all the filters work with different ranges and exceptions.
 
     # tshark -i eth0 src net 192.168.1.0/24
 
-| capture only source packets coming from specific IP.
-|  use dst filter for capturing only destination packets. We can also
+capture only source packets coming from specific IP, use dst filter for capturing only destination packets. We can also
 use the combination of both filters.
 
 5. Filter with port
