@@ -36,9 +36,7 @@ mine as a second one. This time the first flash drive takes a name as
 want is, my flash drive to be detected as ``/dev/my_flash`` every time I
 plug it in any order.
 
-| So I will write a udev rules which will create a SYMLINK to the device
-node
-|  based upon device attributes.
+So I will write a udev rules which will create a SYMLINK to the device node based upon device attributes.
 
 I have to know the sysfs device path of the flash drive. This should be
 in ``/sys/block``, as it's a block device.
@@ -262,27 +260,30 @@ I will use attributes from the following parent device:
         ATTRS{product}=="Storage Media"
         ATTRS{serial}=="7B4211105063000914"
 
-| My selected attributes are:
-| 
-`` SUBSYSTEMS=="usb" ATTRS{idVendor}=="054c" ATTRS{idProduct}=="0439" ATTRS{serial}=="7B4211105063000914"``
-|  each rules is constructed using a series of key-values pairs. In the
+My selected attributes are:
+ 
+`SUBSYSTEMS=="usb" ATTRS{idVendor}=="054c" ATTRS{idProduct}=="0439" ATTRS{serial}=="7B4211105063000914"`
+
+each rules is constructed using a series of key-values pairs. In the
 above case, key-value(SUBSYSTEMS) is compared with value(usb) and so on.
 
 Now I have decide my basic device attributes, lets monitor the kernel
 events. This can be done using:
 
     ::
-
-        root@zyro:~# udevadm monitor
+       root@zyro:~# udevadm monitor
 
 This command will wait for any kernel event. Now if I remove the flash
 drive, it will display all events related to key-value pair
+
 ``ACTION=="remove"``. In the same way, if I plug the flash device again,
 it will log all the entry related to ``ACTION="add"``.
 
-| So there will an additional attributes in
-``/etc/udev/rules.d/10-local.rules``
-|  `` ACTION=="add" ACTION=="remove"``
+So there will an additional attributes in
+
+	`/etc/udev/rules.d/10-local.rules`
+
+	`ACTION=="add" ACTION=="remove"`
 
 *file: /etc/udev/rules.d/10-local.rules*
 

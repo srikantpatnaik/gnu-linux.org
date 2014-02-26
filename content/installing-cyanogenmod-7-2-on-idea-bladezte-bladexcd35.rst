@@ -11,14 +11,13 @@ This post is an update to
 mainly focuses on **Idea Blade** in which we have attempted to install
 CyanogenMod 7.2.
 
-| 1) Download CyanogenMod Stable version from this `link`_.
-|  2) and Google Apps from `here`_
-|  3) Copy both the zip files in sdcard
-|  4) The procedure remains same till installing ROM Manager
-|  5) you can't directly install **cm-7.2.0-blade.zip** using ROM
-manager because it will throw an error something like,
-| 
-`` E:failed to find "cache" partition to mount at "/cache" E:Can't mount /cache/recovery/log E:Can't open /cache/recovery/log E:failed to find "cache" partition to mount at "/cache" E:Can't mount /cache/recovery/last_log E:Can't open /cache/recovery/last_log E:Can't find misc E:failed to find "cache" partition to mount at "/cache"``
+  1) Download CyanogenMod Stable version from this `link`_.
+  2) and Google Apps from `here`_
+  3) Copy both the zip files in sdcard
+  4) The procedure remains same till installing ROM Manager
+  5) you can't directly install **cm-7.2.0-blade.zip** using ROM manager because it will throw an error something like,
+ 
+E:failed to find "cache" partition to mount at "/cache" E:Can't mount /cache/recovery/log E:Can't open /cache/recovery/log E:failed to find "cache" partition to mount at "/cache" E:Can't mount /cache/recovery/last_log E:Can't open /cache/recovery/last_log E:Can't find misc E:failed to find "cache" partition to mount at "/cache"``
 
 you can't even backup, restore or flash ROM etc. because **CWM** fails
 to identify root access to the device.
@@ -32,33 +31,39 @@ to identify root access to the device.
 7) and connect to \`ADB\` using USB(enable \`Android debugging mode\` on
 the device)
 
-| 8) unzip \`flash\_image.zip\` and push it to a location \`/sdcard/\`
-of the device
-|  `` unzip flash_image.zip adb push flash_image /sdcard/``
+8) unzip \`flash\_image.zip\` and push it to a location \`/sdcard/\` of the device ::
 
-| 9) unzip **recovery-4.0.1.0-blade-gen2-en.zip** and push it to a
-location \`/sdcard/\`
-| 
-`` unzip recovery-4.0.1.0-blade-gen2-en.zip adb push recovery.img /sdcard/``
+  	unzip flash_image.zip adb push flash_image /sdcard/
 
-| 10) now enter the ``adb shell`` by typing,
-|  `` adb shell``
+9) unzip **recovery-4.0.1.0-blade-gen2-en.zip** and push it to a
+location \`/sdcard/\` ::
+ 
+	unzip recovery-4.0.1.0-blade-gen2-en.zip adb push recovery.img /sdcard/
 
-| to enter as a ``root``, type
-|  `` su``
+10) now enter the ``adb shell`` by typing, ::
+	
+	   adb shell	
 
-| 11) you need to copy the binary \`flash\_image\` to \`/system/bin/\`
-of the device, but \`/system\` needs to be mounted as ``rw`` first, type
-|  `` busybox mount -o remount,rw /system``
+to enter as a ``root``, type ::
+	
+	   su
 
-| 12) and copy \`flash\_image\` binary to \`/system/bin\`
-|  `` busybox cp /sdcard/flash_image /system/bin``
+11) you need to copy the binary \`flash\_image\` to \`/system/bin/\`
+of the device, but \`/system\` needs to be mounted as ``rw`` first, type::
 
-| 13) now give all permission to that binary
-|  `` cd /system/bin busybox chmod 777 flash_image``
+	busybox mount -o remount,rw /system
 
-| 14) now flash the recovery image using,
-|  `` flash_image recovery /sdcard/recovery.img``
+12) and copy `flash_image` binary to `/system/bin` ::
+
+	busybox cp /sdcard/flash_image /system/bin
+
+13) now give all permission to that binary ::
+
+	cd /system/bin busybox chmod 777 flash_image
+
+14) now flash the recovery image using ::
+
+ 	   flash_image recovery /sdcard/recovery.img
 
 Now reboot and select **Reboot into Recovery** option in ROM manager and
 boot again in recovery mode. You can now follow the same procedure for
@@ -74,22 +79,22 @@ screen.
 
 2) Attach phone using USB cable.
 
-| 3) and type
-|  `` fastboot flash recovery recovery.img``
-|  from your GNU/linux system.
+3) and type
+
+	`fastboot flash recovery recovery.img` from your GNU/linux system.
 
 'fastboot' binary can be located in android-sdk path
 "android-sdk-linux/platform-tools/fastboot".
 
-| **versions:**
-|  ----
-|  1) z4root\_blade\_root - v2
-|  2) transparent proxy - 3.08 beta
-|  3) ROM Manager - v5.0.0.8
+**versions:**
 
-| **Refs:**
-|  ----
-|  1) `CWM Recovery Solution-Idea Blade`_
+1) z4root\_blade\_root - v2
+2) transparent proxy - 3.08 beta
+3) ROM Manager - v5.0.0.8
+
+**Refs:**
+
+1) `CWM Recovery Solution-Idea Blade`_
 
 .. _how-to-install-cyanogeod-7-1-on-zte-blade-a-k-a-dell-xcd35: http://gnu-linux.org/how-to-install-cyanogeod-7-1-on-zte-blade-a-k-a-dell-xcd35/
 .. _link: http://download.cyanogenmod.com/get/jenkins/2816/cm-7.2.0-blade.zip

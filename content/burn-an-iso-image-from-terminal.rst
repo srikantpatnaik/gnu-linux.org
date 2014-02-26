@@ -33,7 +33,7 @@ EXAMPLE::
 
 	 wodim -v -sao dev=/dev/sr0 driveropts=burnfree ~/iso-images/fedora-16.iso
 
- **sao** is session at once (no multi-sessions), this is default
+**sao** is session at once (no multi-sessions), this is default
 option during burning an ISO image. also **burnfree** turns on the
 buffer underrun technology.
 
