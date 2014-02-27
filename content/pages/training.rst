@@ -6,6 +6,7 @@ Training
 :pagetitle: Training and Workshops on Embedded Linux, Android, Open Hardware, Web development
 :keywords: Linux, workshops, India, Free course, Free Linux course
 :description: Linux workshops in India, Training on embedded Linux, Bash, web frameworks, Android, Arduino
+:slug: training
 
 |
 
@@ -13,6 +14,8 @@ Classroom sessions and workshops on industry standard Linux tools. Available for
 beginners and professionals. 
 
 Our training material will always available for free under GNU Free Documentation License.
+
+Video sessions coming soon. 
 
 |
 
@@ -23,8 +26,8 @@ Our training material will always available for free under GNU Free Documentatio
     <div class="thumbnail">
       <div class="caption">
         <h3>The GNU/Linux</h3>
-        <p></p>
-        <p><a href="http://gnu-linux.org/pages/thelinux.html" class="btn btn-default" role="button">Details</a></p>
+        <p>history, future, installation, equivalent apps, commands, case studies</p>
+        <p><a href="http://gnu-linux.org/pages/gnulinux.html" class="btn btn-default" role="button">Details</a></p>
       </div>
     </div>
   </div>
@@ -32,9 +35,9 @@ Our training material will always available for free under GNU Free Documentatio
   <div class="col-sm-6 col-md-4">
     <div class="thumbnail">
       <div class="caption">
-        <h3>Thumbnail label</h3>
-        <p>...</p>
-        <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+        <h3>Embedded Linux</h3>
+        <p>uboot, kernel, drivers, filesystem, debugging, optimizing, dev-boards</p>
+        <p> <a href="http://gnu-linux.org/pages/embeddedlinux.html" class="btn btn-default" role="button">Details</a></p>
       </div>
     </div>
   </div>
@@ -42,9 +45,9 @@ Our training material will always available for free under GNU Free Documentatio
   <div class="col-sm-6 col-md-4">
     <div class="thumbnail">
       <div class="caption">
-        <h3>Thumbnail label</h3>
-        <p>...</p>
-        <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+        <h3>About Android</h3>
+        <p>compile custom rom, adb, busybox, am, pm, root, recovery, database</p>
+        <p> <a href="#" class="btn btn-default" role="button">Details</a></p>
       </div>
     </div>
   </div>
@@ -54,9 +57,9 @@ Our training material will always available for free under GNU Free Documentatio
   <div class="col-sm-6 col-md-4">
     <div class="thumbnail">
       <div class="caption">
-        <h3>Thumbnail label</h3>
-        <p>...</p>
-        <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+        <h3>CLI Programs</h3>
+        <p>bash, pipes, grep, regex, sed, awk, vim, shell scripts, examples</p>
+        <p> <a href="#" class="btn btn-default" role="button">Details</a></p>
       </div>
     </div>
   </div>
@@ -64,9 +67,9 @@ Our training material will always available for free under GNU Free Documentatio
   <div class="col-sm-6 col-md-4">
     <div class="thumbnail">
       <div class="caption">
-        <h3>Thumbnail label</h3>
-        <p>...</p>
-        <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+        <h3>8bit Systems</h3>
+        <p>designing, toolchain, language, modems, sensors, motors, oshw project</p>
+        <p> <a href="#" class="btn btn-default" role="button">Details</a></p>
       </div>
     </div>
   </div>
@@ -74,9 +77,9 @@ Our training material will always available for free under GNU Free Documentatio
   <div class="col-sm-6 col-md-4">
     <div class="thumbnail">
       <div class="caption">
-        <h3>Thumbnail label</h3>
-        <p>...</p>
-        <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+        <h3>Web builder</h3>
+        <p>dns, hosting, cms, databases, frameworks, apache, debugging</p>
+        <p><a href="#" class="btn btn-default" role="button">Details</a></p>
       </div>
     </div>
   </div>

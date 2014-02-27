@@ -1,19 +1,17 @@
-The Linux
-#########
+The GNU/Linux
+#############
 
-:date: 2012-12-01 10:02
+:date: 2014-02-26 10:02
 :status: hidden
 :author: Srikant Patnaik
 :pagetitle: Training and Workshops on Basic GNU/Linux
 :keywords: Linux, workshops, India, Free course, Free Linux course, Basic Linux, Free Linux CD
-:description: Linux workshops in India, Training on Basic Linux, Linux command line tools
+:description: Linux workshops in India, Training on Basic Linux, Linux command line tools, Buy Linux Videos
+:slug: gnulinux
 
 |
 
-Classroom sessions and workshops on industry standard Linux tools. Available for both 
-beginners and professionals. 
-
-Our training material will always available for free under GNU Free Documentation License.
+**1 day (> 4 hr hands-on)**
 
 |
 
