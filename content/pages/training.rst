@@ -47,7 +47,7 @@ Video sessions coming soon.
       <div class="caption">
         <h3>About Android</h3>
         <p>compile custom rom, adb, busybox, am, pm, root, recovery, database</p>
-        <p> <a href="#" class="btn btn-default" role="button">Details</a></p>
+        <p> <a href="http://gnu-linux.org/pages/android.html" class="btn btn-default" role="button">Details</a></p>
       </div>
     </div>
   </div>
