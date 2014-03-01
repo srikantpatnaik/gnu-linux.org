@@ -59,7 +59,7 @@ Video sessions coming soon.
       <div class="caption">
         <h3>CLI Programs</h3>
         <p>bash, pipes, grep, regex, sed, awk, vim, shell scripts, examples</p>
-        <p> <a href="#" class="btn btn-default" role="button">Details</a></p>
+        <p> <a href="http://gnu-linux.org/pages/cliprograms.html" class="btn btn-default" role="button">Details</a></p>
       </div>
     </div>
   </div>
@@ -69,7 +69,7 @@ Video sessions coming soon.
       <div class="caption">
         <h3>8bit Systems</h3>
         <p>designing, toolchain, language, modems, sensors, motors, oshw project</p>
-        <p> <a href="#" class="btn btn-default" role="button">Details</a></p>
+        <p> <a href="http://gnu-linux.org/pages/eightbitsystems.html" class="btn btn-default" role="button">Details</a></p>
       </div>
     </div>
   </div>
@@ -79,7 +79,7 @@ Video sessions coming soon.
       <div class="caption">
         <h3>Web builder</h3>
         <p>dns, hosting, cms, databases, frameworks, apache, debugging</p>
-        <p><a href="#" class="btn btn-default" role="button">Details</a></p>
+        <p><a href="http://gnu-linux.org/pages/webbuilders.html" class="btn btn-default" role="button">Details</a></p>
       </div>
     </div>
   </div>
