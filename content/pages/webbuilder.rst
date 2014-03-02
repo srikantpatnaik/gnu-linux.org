@@ -5,8 +5,8 @@ Web Builder
 :status: hidden
 :author: Srikant Patnaik
 :pagetitle: Training and Workshops on Web Development and Server Setup
-:keywords: Web Development, workshops India,  Free Web Development course, 
-:description: Embedded Linux workshops in India, Training on ARM based 32 bit SoCs, Uboot, Kernel, Filesystem customizations, debugging, training videos
+:keywords: Web Development, workshops India, Django, Web2py, Jinja2, Apache, HTML5, DNS, setting ftp
+:description: Training on web development in India, Workshops and online courses on Web Development and Server setup
 :slug: webbuilder
 
 |
@@ -25,100 +25,86 @@ Web Builder
 	</tr>
 
 	<tr>
-	<td>Introduction to embedded Linux(EL)</td>
-	<td>What is embedded Linux? Various aplications & scope<br>
-		Why EL? Comparision with proprietary options
+	<td>Introduction to Internet</td>
+	<td>History & working of Internet: switches & routers <br>
+		World wide web, DNS & IP address</td>
 	<td>30 mins</td>
 	</tr>
 
 	<tr>
-	<td>Boot sequence in Linux</td>
-	<td>Traditional GNU/Linux Desktop: BIOS, Bootloader, Kernel and filesystem<br>
-		Difference of EL boot from traditional boot, understanding U-Boot and Kernel
-		</td>
+	<td>Domain names & shared web hosting</td>
+	<td>Hosting website: public & private IPs, domain names, shared/dedicated hosting<br>
+		Purchasing online domain names and web hosting</td>
 	<td>50 mins</td>
 	</tr>
 
 	<tr>
-	<td>Setting up development environment</td>
-	<td>Installing armhf cross compiler toolchain & other software tools on Ubuntu <br>
-		Serial and other peripherals for hardware debugging <br>
-		Formatting sdcard with desired partitions
-		</td>
-	<td>40 mins</td>
-	</tr>
-
-	<tr>
-	<td>Compiling U-boot for your board</td>
-	<td>Downloading & configuring U-boot, cross compiling for target board<br>
-		sdcard layout and writing U-boot bootloader</td>
-	<td>40 mins</td>
-	</tr>
-
-	<tr>
-	<td>Configuring and compiling kernel </td>
-	<td>Downloading and understanding kernel file hierarchy <br>
-		Kernel config file and customizations, cross compiling kernel for target board<br>
-		Copying kernel to desired partition of sdcard</td>
-	<td>80 mins</td>
+	<td>DNS Management</td>
+	<td>Exploring MX, CNAME, NS records<br>
+	    Domain & subdomain forwarding, URL masking </td>
+	<td> 30 mins </td>
 	</tr>
 
 
 	<tr>
-	<td>Device drivers - compiling & customizing</td>
-	<td>Understanding device drivers operations <br>
-		Writing a sample device driver for Linux kernel
-		</td>
-	<td>90 mins </td>
+	<td>Setting Wordpress & other CMS</td>
+	<td>Setting up Wordpress/Drupal/Joomla using web interface<br>
+		Installing plugins and customizing look</td>
+	<td>90 mins</td>
+	</tr>
+
+	<tr>
+	<td>Databases & backups</td>
+	<td>
+		Using MySQL database for CMS<br>
+		Using web interface to backup/restore databases<br>
+		Scheduling backup using cron jobs</td>
+	<td>20 mins</td>
+	</tr>
+
+	<tr>
+	<td>Web server setup in dedicated hosting</td>
+	<td>Installing Ubuntu/CentOS server and configuring Apache <br>
+		Setting up other mail server & other packages </td>
+	<td>70 mins</td>
+	</tr>
+
+
+	<tr>
+	<td>Basic HTML5, CSS3 website. SEO and monetizing site</td>
+	<td>A simple website with basic functionality <br>
+		Customizing opensource html5 templates, using basic javascript<br>
+		Using SEO tools to maximize traffic and monetizing </td>
+	<td>50 mins </td>
 	</tr>	
-	
+
 	<tr>
-	<td>ARM chroot & Filesystem customizations </td>
-	<td>Downloading and extracting minimal rootfs<br>
-		Setting up qemu-arm-static for ARM chroot emulation<br>
-		Mounting dev, proc, and sysfs for chroot environment<br></td>
-	<td> 90 mins </td>
+	<td>Using web frameworks for interactive sites</td>
+	<td>Exploring various web development frameworks<br>
+		Writing a simple Bash cgi script to handle Get & Post request</td>
+	<td>40 mins</td>
 	</tr>
 
 	<tr>
-	<td>Installing minimal packages</td>
-	<td>From chroot environment, updating repositories & installing language support <br>
-		Tweaking desktop and conf files for speed optimization</td>
-	 </td>
-
-	<td>30 mins </td>
-	</tr>
-
-
-	<tr>
-	<td>User permissions and startup jobs</td>
-	<td>Setting up users and groups<br>
-		Granting access to hardwares, tweaking startup jobs</td>
-	<td>20 mins </td>
-	</tr>
-
-	<tr>
-	<td>U-boot access using minicom</td>
-	<td>Serial connection to hardware, and using serial emulator on host machine<br>
-		Using U-boot prompt to customize boot options </td>
-	<td>20 mins </td>
-	</tr>
-
-	<tr>
-	<td>Tools for kernel and application testing</td>
-	<td>Using 'ssh' and 'scp' with keys <br>
-		Writing simple bash scripts to automate builds & tests</td>
-	<td> 20 mins</td>
-	</tr>
-
-	<tr>
-	<td>Similarities between embedded boards</td>
-	<td>Comparision between beaglebone, pandaboard, cubieboard and rasberryPi
-		Exploring various embedded Linux operating systems<br>
+	<td>Learning Python for web development </td>
+	<td>Python programming in one hour <br>
+		Exploring Python programming for web development<br>
 		</td>
-	<td>30 mins </td>
+	<td>60 mins</td>
 	</tr>
 
-	</table>
+	<tr>
+	<td>Web2Py server in 5 minutes</td>
+	<td>Exploring Django & Web2Py as Python frameworks <br>
+		Customizing Web2Py server  </td>
+	<td>30 mins</td>
+	</tr>
 
+	<tr>
+	<td>Network/system monitoring commands </td>
+	<td>Frequently used network & system monitoring commands<br>
+		Writing simple Bash scripts to automate tasks</td>
+	<td> 30 mins</td>
+	</tr>
+	</table>
 

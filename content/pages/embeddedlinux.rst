@@ -5,7 +5,7 @@ Embedded Linux
 :status: hidden
 :author: Srikant Patnaik
 :pagetitle: Training and Workshops on Embedded Linux
-:keywords: Embedded Linux, workshops India,  Free Embedded Linux, Uboot, Kernel, Filesystem, Cubieboard, ARM Linux, RaspberryPi, cubieboard, beagleboard
+:keywords: Embedded Linux, workshops India, Embedded Linux, Uboot, Kernel, Filesystem, Cubieboard, ARM Linux, RaspberryPi, cubieboard, beagleboard
 :description: Embedded Linux workshops in India, Training on ARM based 32 bit SoCs, Uboot, Kernel, Filesystem customizations, debugging, training videos
 :slug: embeddedlinux
 

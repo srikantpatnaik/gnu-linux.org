@@ -5,7 +5,7 @@ CLI Programs
 :status: hidden
 :author: Srikant Patnaik
 :pagetitle: Training and Workshops on Linux Command Line Tools
-:keywords: Linux, Training India, Free course, bash, pipes, bash scripts, sed, awk, vim, regular expressions, online training
+:keywords: Linux, Training India, bash, pipes, bash scripts, sed, awk, vim, regular expressions, online training
 :description: Training and Workshop on Linux command line tools, sed, awk, regular expressions, permissions, vim, audio video editing, Online training available
 :slug: cliprograms
 
