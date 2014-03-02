@@ -4,18 +4,14 @@ Training
 :date: 2012-12-01 10:02
 :author: Srikant Patnaik
 :pagetitle: Training and Workshops on Embedded Linux, Android, Open Hardware, Web development
-:keywords: Linux, workshops, India, Free course, Free Linux course
+:keywords: Linux, workshops, Android, Networking, Arduino, Python, Embedded Linux, ARM Linux
 :description: Linux workshops in India, Training on embedded Linux, Bash, web frameworks, Android, Arduino
 :slug: training
 
 |
 
-Classroom sessions and workshops on industry standard Linux tools. Available for both 
-beginners and professionals. 
+Classroom sessions and workshops on industry standard Linux tools. Available for both beginners and professionals. 
 
-Our training material will always available for free under GNU Free Documentation License.
-
-Video sessions coming soon. 
 
 |
 
@@ -79,7 +75,7 @@ Video sessions coming soon.
       <div class="caption">
         <h3>Web builder</h3>
         <p>dns, hosting, cms, databases, frameworks, apache, debugging</p>
-        <p><a href="http://gnu-linux.org/pages/webbuilders.html" class="btn btn-default" role="button">Details</a></p>
+        <p><a href="http://gnu-linux.org/pages/webbuilder.html" class="btn btn-default" role="button">Details</a></p>
       </div>
     </div>
   </div>
