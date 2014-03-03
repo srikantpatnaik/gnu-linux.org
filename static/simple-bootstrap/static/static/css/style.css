@@ -62,7 +62,7 @@ body {
   margin-top: 28px;
 }
 .header .text-muted  a{
-    color:#999;
+    color:#999; // Srikant, from 999
     text-decoration:none;
 }
 .entry-content{

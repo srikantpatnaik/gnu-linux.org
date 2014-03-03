@@ -10,7 +10,7 @@ Consultancy
 
 |
 
-We will provide free web support on GNU/Linux tools, Android customizations and more. 
+We provide support on GNU/Linux tools, Android customizations and more. 
 
 **Embedded Linux**	Linux on ARM devices - Optimizing boot time and resources,
 Qt5/Qt4, directFB based UI, Busybox customizations, uClibc and glibC based applications 
