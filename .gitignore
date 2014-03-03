@@ -1,7 +1,7 @@
 #All output html files
 output/
 
-.Makefile
+Makefile
 
 #Python
 *.py[cod]
