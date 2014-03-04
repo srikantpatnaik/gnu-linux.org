@@ -11,7 +11,13 @@ Training
 
 |
 
-Classroom sessions and workshops on industry standard Linux tools. Available for both beginners and professionals. 
+Classroom sessions and workshops on industry standard GNU/Linux tools. Available for both beginners and professionals. 
+
+Workshops presently available only in India. To conduct at your city/college/company, contact to **info [at] gnu-linux.org** in advance.
+
+**Online courses** will commence from June, 2014 
+
+
 
 |
 

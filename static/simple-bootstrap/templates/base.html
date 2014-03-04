@@ -57,17 +57,39 @@
             <footer id="contentinfo" class="footer">
 
                     <nav class="pull-right bottom-nav">
+
+	
 					<span class="pop" data-toggle="popover" data-placement="top">
-						about
-						<span class="content">
-							Any advice relating to finance, investments, stocks, companies, securities or any other financial matters whatsoever reflects the private opinion of the person giving this advice. It is not the advice of a financial, investment or other expert and Linux Q, Qhub, its members, employees and representatives take no responsibility for any consequences resulting from following such advice. Anyone seeking financial and/or investment advice is strongly advised to conduct their own research or consult a professional financial advisor. Do not disregard
+						submit
+						<span class="content" style="text-align:justify;">
+						Send your blog posts to to info [at] gnu-linux.org.
+						You hold all rights to your content, only your name will be published. 
+						For any further query, please write to above address. 
 						</span>
-					</span>
+					</span> &nbsp;
+					
+					<span class="pop" data-toggle="popover" data-placement="top">
+						social
+						<span class="content" style="text-align:justify;">
+						Coming soon
+						</span>
+					</span> &nbsp;
+
+
+					<span class="pop" data-toggle="popover" data-placement="top">
+						disclaimer
+						<span class="content" style="text-align:justify;">
+						There is no guarantee or warranty of any kind on content published on gnu-linux.org. 
+						Please raise issues related to content and trademark to info [at] gnu-linux.org. <br>
+						Linux® is the registered trademark of Linus Torvalds in the U.S. & other countries.	
+						</span>
+					</span> &nbsp;
 
 					<span class="pop" data-toggle="popover" data-placement="top">
 						about
-						<span class="content">
-							Any advice relating to finance, investments, stocks, companies, securities or any other financial matters whatsoever reflects the private opinion of the person giving this advice. It is not the advice of a financial, investment or other expert and Linux Q, Qhub, its members, employees and representatives take no responsibility for any consequences resulting from following such advice. Anyone seeking financial and/or investment advice is strongly advised to conduct their own research or consult a professional financial advisor. Do not disregard
+						<span class="content" style="text-align:justify;">
+						The gnu-linux.org is a web portal for News, Discussions, Blogs, Training and Consultancy. 
+						To explore opportunities with us, please write to info [at] gnu-linux.org
 						</span>
 					</span>
 
@@ -76,7 +98,7 @@
                     </nav>
 
 					<nav class="pull-left bottom-nav">
-                    <a href="{{ FEED_DOMAIN }}/sitemap.xml">sitemap</a>
+                    <a href="{{ FEED_DOMAIN }}/sitemap.xml">sitemap</a>&nbsp;
                     <a href="{{ FEED_DOMAIN }}/{{ FEED_ALL_ATOM }}">rss</a> 
 					</nav>
                    {#Srikant &copy; <a href="{{SITEURL}}">{{SITENAME}}</a> Proudly powered by <a href="http://getpelican.com/">Pelican</a> #}
@@ -101,7 +123,7 @@
                 },*/                                                              
                 content: function() {                                           
 					data ='';
-                    data += "<span class='remove' style='position:absolute;top:5px;right:5px;'>&times</span>";
+                    data += "<span class='remove' style='position:absolute;top:5px;right:5px;font-size: 18px;'>&times</span>";
 					data += $(this).find(".content").html();                     
                     return  data 
                 }                                                               
