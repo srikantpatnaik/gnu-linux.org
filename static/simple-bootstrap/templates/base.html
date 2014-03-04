@@ -58,16 +58,21 @@
 
                     <nav class="pull-right bottom-nav">
 					<span class="pop" data-toggle="popover" data-placement="top">
-						about11
-						<span class="title">
-							test title
-						</span>
+						about
 						<span class="content">
-							test content
+							Any advice relating to finance, investments, stocks, companies, securities or any other financial matters whatsoever reflects the private opinion of the person giving this advice. It is not the advice of a financial, investment or other expert and Linux Q, Qhub, its members, employees and representatives take no responsibility for any consequences resulting from following such advice. Anyone seeking financial and/or investment advice is strongly advised to conduct their own research or consult a professional financial advisor. Do not disregard
 						</span>
 					</span>
-					<span class="pop" data-toggle="popover" data-placement="left" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">disclaimer</span> &nbsp;
-					<span class="pop" data-toggle="popover" data-placement="left" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">about</span>
+
+					<span class="pop" data-toggle="popover" data-placement="top">
+						about
+						<span class="content">
+							Any advice relating to finance, investments, stocks, companies, securities or any other financial matters whatsoever reflects the private opinion of the person giving this advice. It is not the advice of a financial, investment or other expert and Linux Q, Qhub, its members, employees and representatives take no responsibility for any consequences resulting from following such advice. Anyone seeking financial and/or investment advice is strongly advised to conduct their own research or consult a professional financial advisor. Do not disregard
+						</span>
+					</span>
+
+
+
                     </nav>
 
 					<nav class="pull-left bottom-nav">
@@ -89,13 +94,16 @@
         $(document).ready(function() {                                          
             $(".pop").popover({                                                 
                 html: true,                                                     
-                title: function() {                                             
+     /*           title: function() {                                             
                     data = $(this).find(".title").html();                       
                     data += "<span class='remove' style='float:right;'>&times</span>";
                     return data;                                                
-                },                                                              
+                },*/                                                              
                 content: function() {                                           
-                    return $(this).find(".content").html();                     
+					data ='';
+                    data += "<span class='remove' style='position:absolute;top:5px;right:5px;'>&times</span>";
+					data += $(this).find(".content").html();                     
+                    return  data 
                 }                                                               
             });                                                                 
             $(".pop").click(function() {                                        
