@@ -42,11 +42,12 @@
         <div class="container">
             <div class="header">
                 <ul class="nav nav-pills pull-right">
-                    <li class="{% block navclass %}{{ NAVCLASS }}{% endblock navclass %}"><a href="{{ SITEURL }}">Home</a></li>
-                {% for p in PAGES %}
+               {# <li class="{% block navclass %}{{ NAVCLASS }}{% endblock navclass %}"><a href="{{ SITEURL }}/pages/training_and_consultancy.html">more</a></li> #}
+               <li> <a style="color:#999;" href="{{ SITEURL }}/pages/training.html">services</a></li>
+              {#  {% for p in PAGES %}
                     <li{% if p == page %} class="active"{% endif %}><a href="{{ SITEURL }}/{{ p.url }}">{{ p.title }}</a></li>
                 {% endfor %}
-			
+			  #}
 {# Srikant                    <li{% if author or tag %} class="active"{% endif %}{% block archclass %}{{ ARCHCLASS }}{% endblock archclass %}><a href="{{ SITEURL }}/archives.html">Archives</a></li> #}
                 </ul>
                 <h3 class="text-muted"><a href="{{ SITEURL }}">{{ SITENAME }}</a></h3>
@@ -54,14 +55,57 @@
             {% block content %}
             {% endblock %}
             <footer id="contentinfo" class="footer">
+
                     <nav class="pull-right bottom-nav">
-                        <a href="{{ FEED_DOMAIN }}/{{ FEED_ALL_ATOM }}">RSS</a>
+					<span class="pop" data-toggle="popover" data-placement="top">
+						about11
+						<span class="title">
+							test title
+						</span>
+						<span class="content">
+							test content
+						</span>
+					</span>
+					<span class="pop" data-toggle="popover" data-placement="left" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">disclaimer</span> &nbsp;
+					<span class="pop" data-toggle="popover" data-placement="left" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">about</span>
                     </nav>
-                    <address id="about" class="vcard body">
+
+					<nav class="pull-left bottom-nav">
+                    <a href="{{ FEED_DOMAIN }}/sitemap.xml">sitemap</a>
+                    <a href="{{ FEED_DOMAIN }}/{{ FEED_ALL_ATOM }}">rss</a> 
+					</nav>
                    {#Srikant &copy; <a href="{{SITEURL}}">{{SITENAME}}</a> Proudly powered by <a href="http://getpelican.com/">Pelican</a> #}
-                    <a href="{{SITEURL}}">{{SITENAME}}</a>
-                    </address><!-- /#about -->
-            </footer><!-- /#contentinfo -->
+
+           </footer> <!-- /#contentinfo -->
         </div><!-- container -->
+
+		<!-- Fpr popover scripts -->
+        <script src="{{ SITEURL }}/theme/static/js/jquery-1.11.0.min.js"></script> <!-- Srikant -->
+        <script src="{{ SITEURL }}/theme/static/js/bootstrap.min.js"></script> <!-- Srikant -->
+ <!--		<script>$('.pop').popover();</script> -->
+
+
+    <script type="text/javascript" charset="utf-8">                             
+        $(document).ready(function() {                                          
+            $(".pop").popover({                                                 
+                html: true,                                                     
+                title: function() {                                             
+                    data = $(this).find(".title").html();                       
+                    data += "<span class='remove' style='float:right;'>&times</span>";
+                    return data;                                                
+                },                                                              
+                content: function() {                                           
+                    return $(this).find(".content").html();                     
+                }                                                               
+            });                                                                 
+            $(".pop").click(function() {                                        
+                $(".pop").not(this).popover("hide");                            
+            });                                                                 
+            $("body").on("click", ".remove", function(){                        
+                $(this).parents().find(".pop").popover("hide");                 
+            });                                                                 
+        });                                                                     
+                                                                                
+    </script>       
     </body>
 </html>

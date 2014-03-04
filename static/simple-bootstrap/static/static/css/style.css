@@ -1,6 +1,7 @@
 /* Space out content a bit */
 body {
   padding-top: 20px;
+  background-color: #FAFAFA;
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
@@ -32,6 +33,7 @@ body {
   color: #777;
   border-top: 1px solid #e5e5e5;
   margin-top:40px;
+  margin-bottom:40px; //Srikant
 }
 
 /* Customize container */
@@ -93,8 +95,16 @@ body {
     font-size:16px;
     margin-bottom:10px;
 }
-.bottom-nav{display:none;}
-.bottom-nav a{margin-left:15px;}
+.bottom-nav
+{
+display:none;
+font-size: 12px; //Srikant
+color: #999;
+
+}
+.bottom-nav a{margin-left:1px;
+color:#848484; //Srikant
+}
 /* code style */
 .hightlight { background-color: #ffffcc }
 .c { color: #999988; font-style: italic } /* Comment */
@@ -174,4 +184,18 @@ body {
  .nav-pills,.bottom-nav{
     display:block;
  }
+.pop {
+    -webkit-transition: all .5s ease-out;
+    -moz-transition: all .5s ease-out;
+    -o-transition: all .5s ease-out;
+    transition: all .5s ease-out;	
 }
+.pop:hover {
+	color: #000000;
+	cursor: pointer;
+}
+
+.pop .title,                                                            
+     .pop .content {                                                         
+            display: none;                                                      
+        }

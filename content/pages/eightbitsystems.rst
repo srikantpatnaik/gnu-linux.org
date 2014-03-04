@@ -19,9 +19,9 @@
 
 	<table class="table">
 	<tr>
-	<th><h2 style="color:SlateGray">Topic</h2></th>
-	<th><h2 style="color:SlateGray">Content</h2></th>
-	<th><h2 style="color:SlateGray">Duration</h2></th>
+	<th><h3 style="color:SlateGray">Topic</h3></th>
+	<th><h3 style="color:SlateGray">Content</h3></th>
+	<th><h3 style="color:SlateGray">Duration</h3></th>
 	</tr>
 	<tr>
 	<td>Embedded system setup on GNU/Linux </td>

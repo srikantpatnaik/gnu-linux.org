@@ -1,7 +1,8 @@
-Training
+Training 
 ########
 
 :date: 2012-12-01 10:02
+:status: hidden
 :author: Srikant Patnaik
 :pagetitle: Training and Workshops on Embedded Linux, Android, Open Hardware, Web development
 :keywords: Linux, workshops, Android, Networking, Arduino, Python, Embedded Linux, ARM Linux
@@ -11,7 +12,6 @@ Training
 |
 
 Classroom sessions and workshops on industry standard Linux tools. Available for both beginners and professionals. 
-
 
 |
 
@@ -80,4 +80,6 @@ Classroom sessions and workshops on industry standard Linux tools. Available for
     </div>
   </div>
 	</div>
+
+
 

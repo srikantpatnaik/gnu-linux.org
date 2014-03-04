@@ -289,7 +289,8 @@ textarea {
   line-height: inherit;
 }
 a {
-  color: #428bca;
+  //color: #428bca;
+  color: #0A2229;
   text-decoration: none;
 }
 a:hover,
@@ -686,6 +687,7 @@ address {
   margin-bottom: 20px;
   font-style: normal;
   line-height: 1.42857143;
+  font-size: 13px; // Srikant
 }
 code,
 kbd,
@@ -3575,6 +3577,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .nav-pills > li.active > a:focus {
   color: #fff;
   background-color: #428bca;
+  // background-color: #F2F2F2;
 }
 .nav-stacked > li {
   float: none;
@@ -4405,7 +4408,8 @@ a.list-group-item.active > .badge,
   padding: 4px;
   margin-bottom: 20px;
   line-height: 1.42857143;
-  background-color: #fff;
+  //background-color: #fff;
+  background-color: #F8FBEF;
   border: 1px solid #ddd;
   border-radius: 4px;
   -webkit-transition: all .2s ease-in-out;
