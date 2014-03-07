@@ -40,4 +40,7 @@ and debugging on GNU/Linux, Interfacing sensors and motors, cost reduction and o
 |
 
 Also, limited support available through remote access. 
-Contact us more details **consultancy [at] gnu-linux.org**
+
+|
+
+Contact us **consultancy [at] gnu-linux.org**
