@@ -89,4 +89,4 @@ To conduct at your city/college/company, contact to **info [at] gnu-linux.org** 
 	</div>
 
 
-`Consultancy and support <http://gnu-linux.org/pages/consultancy.html`_
+`Consultancy and support <http://gnu-linux.org/pages/consultancy.html>`_
