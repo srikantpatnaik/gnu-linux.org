@@ -23,10 +23,6 @@ in ``/dev/`` for sdcard::
     swapon /dev/mmcblk0p3
 
 Here mmcblk0p3 is the newly created partition from existing ext4/ext3
-rootfs partition. This is a dirty but quick hack to add swap to your existing image::
-
-.. raw:: html
-
-   </div>
+rootfs partition. This is a dirty but quick hack to add swap to your existing image.
 
  
