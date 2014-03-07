@@ -290,14 +290,37 @@ textarea {
 }
 a {
   //color: #428bca;
-  color: #0A2229;
+  color: #0489B1;
   text-decoration: none;
 }
-a:hover,
+a:hover {
+color: #0A2229;
+}
 a:focus {
   color: #2a6496;
-  text-decoration: underline;
+ // text-decoration: underline;
 }
+
+/* a:visited {                                                                   
+//    text-decoration: underline;                                                 
+  color: #0431B4;
+  }                
+*/
+/* Added for title and 2nd line info in each post, Srikant */
+
+.entry-title a {color: #000000;}
+.entry-title a:visited {color: #828282; }
+
+
+.tiny-author a {color: #000000;}
+.tiny-author {font-size: 10px; }
+
+.tiny-date a {color: #000000;}
+.tiny-date {font-size: 10px; }
+
+.tiny-tags a {color: #000000;}
+.tiny-tags {font-size: 10px; }
+
 a:focus {
   outline: thin dotted;
   outline: 5px auto -webkit-focus-ring-color;

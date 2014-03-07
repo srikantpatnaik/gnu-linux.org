@@ -12,10 +12,26 @@
 {% endblock %}
 
 {% for article in articles_page.object_list %}
-        <article class="hentry">
-                <header> <h5 class="entry-title"><a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a></h5> </header>
+    <article class="hentry">
+ {#               <header> <h5 class="entry-title"><a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a></h5> </header>
  {#  Srikant             <div class="entry-content"> {{ article.summary }} </div> #}
-        </article>
+
+		<header>
+		 <h5 class="entry-title">
+		 	<a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a>
+		 </h5>
+<!--		 <span class="tiny-author">
+	    	by <a class="url fn" href="{{ SITEURL }}/{{ article.author.url }}">{{ article.author }}</a> </span>
+		  <span	class="tiny-date">
+			{{ article.date.strftime('%d %b %Y') }} {% if article.tags %}
+		  </span>
+	      <span class="tiny-tags">
+		{% for tag in article.tags %}<a href="{{ SITEURL }}/{{ tag.url }}">{{ tag }} </a>{% endfor %}{% endif %}
+		 </span>
+-->
+		</header>
+
+    </article>
 {% endfor %}
 {% include 'pagination.html' %}
 </section><!-- content -->
