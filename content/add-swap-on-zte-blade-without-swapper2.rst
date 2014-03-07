@@ -274,4 +274,4 @@ Read last section of `drewhill77`_ post for a brief note on swapping.
 .. _drewhill77: http://androidforums.com/boost-mobile-warp-all-things-root/610449-ram-swapping-without-swapper2.html
 .. _adb: http://developer.android.com/tools/help/adb.html
 
-.. |58MB of free RAM after adding swap.| image:: http://gnu-linux.org/wp-content/uploads/2013/10/running_apps.png
+.. |58MB of free RAM after adding swap.| image:: http://gnu-linux.org/uploads/2013/10/running_apps.png

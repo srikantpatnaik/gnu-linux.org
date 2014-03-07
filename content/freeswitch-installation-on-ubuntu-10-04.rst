@@ -52,5 +52,5 @@ Now can enjoy the free calling on your local network using softphone
 Twinkle freeswitch softphone for linux. you can install it using the
 synaptic package manager.
 
-.. |Screenshot from 2013-07-09 14:42:51| image:: http://gnu-linux.org/wp-content/uploads/2013/07/Screenshot-from-2013-07-09-144251-300x168.png
-   :target: http://gnu-linux.org/wp-content/uploads/2013/07/Screenshot-from-2013-07-09-144251.png
+.. |Screenshot from 2013-07-09 14:42:51| image:: http://gnu-linux.org/uploads/2013/07/Screenshot-from-2013-07-09-144251-300x168.png
+   :target: http://gnu-linux.org/uploads/2013/07/Screenshot-from-2013-07-09-144251.png
