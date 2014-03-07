@@ -135,11 +135,4 @@ This should fix the problem. Verify it using::
 
     sudo service mysql start
 
-.. raw:: html
-
-   </div>
-
-.. raw:: html
-
-   </div>
 
