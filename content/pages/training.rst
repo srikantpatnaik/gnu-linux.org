@@ -15,7 +15,9 @@ Classroom sessions and workshops on industry standard GNU/Linux tools. Available
 
 Workshops presently available only in India. **Online courses** will commence from June, 2014.
 
-To conduct at your city/college/company, contact to **info [at] gnu-linux.org** in advance.
+.. raw:: html 
+
+	To conduct at your city/college/company, contact to <script>mail("training","gnu-linux",1,"","training@gnu-linux.org")</script> in advance.
 
 
 
