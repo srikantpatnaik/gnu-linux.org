@@ -15,9 +15,13 @@ Classroom sessions and workshops on industry standard GNU/Linux tools. Available
 
 Workshops presently available only in India. **Online courses** will commence from June, 2014.
 
-.. raw:: html 
 
-	To conduct at your city/college/company, contact to <script>mail("training","gnu-linux",1,"","training@gnu-linux.org")</script> in advance.
+.. raw:: html
+
+	To conduct workshops at your city/college/company, contact at <script type="text/javascript"><!--
+	var zncntto = ['a','r','a','>','-','.','m','r','g','n','<','x','s','n','r','"','o','n','o','i','u','s','g','n','m','>','o','=','i','u','a','i','i','t','@','c','l',' ','"','n','u','a','u','i','n','i','@','a','e','n',':','l','g','l','l',' ','<','r','g','l','a','f','.','=','"','e','r','i','h','g','g','"','n','a','i','/','t','x','-','t'];var wlhkjob = [49,74,10,79,66,34,9,4,23,64,0,33,43,20,17,8,73,60,14,11,65,44,61,26,48,53,35,7,57,27,78,68,50,54,24,40,12,2,46,31,70,1,32,30,69,21,62,42,5,58,15,51,75,41,29,39,76,55,37,67,56,6,72,45,38,47,36,19,3,63,25,52,22,18,59,77,13,71,28,16];var cvemoxw= new Array();for(var i=0;i<wlhkjob.length;i++){cvemoxw[wlhkjob[i]] = zncntto[i]; }for(var i=0;i<cvemoxw.length;i++){document.write(cvemoxw[i]);}
+	// --></script>
+	<noscript>Please enable Javascript to see the email address</noscript> in advance.
 
 
 
