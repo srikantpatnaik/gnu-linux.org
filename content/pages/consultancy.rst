@@ -11,10 +11,9 @@ Consultancy
 
 |
 
-We provide consultancy on following industry standard tools. 
+We provide consultancy and support on following industry standard tools. 
 
-Contact us more details **consultancy [at] gnu-linux.org**
-
+|
 
 **Embedded Linux**	Linux on ARM devices - Optimizing boot time and resources,
 Qt5/Qt4, directFB based UI, Busybox customizations, uClibc and glibC based applications 
@@ -35,7 +34,10 @@ WebOS, Ubuntu Touch, Sailfish-OS and others
 Network monitoring, firewall, security, setting up servers, clusters and routers,
 Python/Bash/Ruby web frameworks and apps
 
-**Microcontrollers**	Any 8/16/32 bit microcontroller applications, toolchain 
+**Microcontrollers** 8/16/32 bit microcontroller applications, toolchain 
 and debugging on GNU/Linux, Interfacing sensors and motors, cost reduction and optimizing hardware
 
+|
+
 Also, limited support available through remote access. 
+Contact us more details **consultancy [at] gnu-linux.org**
