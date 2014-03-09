@@ -6,7 +6,7 @@ Training
 :author: Srikant Patnaik
 :pagetitle: Training and Workshops on Embedded Linux, Android, Open Hardware, Web development
 :keywords: Linux, workshops, Android, Networking, Arduino, Python, Embedded Linux, ARM Linux
-:description: Linux workshops in India, Training on embedded Linux, Bash, web frameworks, Android, Arduino
+:description: Linux workshops in India, Training on embedded Linux, Bash, web frameworks, Android, Arduino, Online courses
 :slug: training
 
 |

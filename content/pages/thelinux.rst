@@ -5,8 +5,8 @@ The GNU/Linux
 :status: hidden
 :author: Srikant Patnaik
 :pagetitle: Training and Workshops on Basic GNU/Linux
-:keywords: Linux, workshops India, Linux course, Basic Linux, Linux commands, Free Linux CD, Download Linux Videos
-:description: GNU/Linux workshops, Training on Basic Linux, Linux command line tools, Installing Ubuntu, Networking, Command Line Utilites, Equivalent Linux softwares, Linux Videos, Online training available
+:keywords: Linux, workshops India, Linux course, Basic Linux, Linux commands, Linux installation, Ubuntu, LinuxMint, Fedora, Free Linux CD, Linux training Videos
+:description: GNU/Linux workshops, Training on Basic Linux, Linux command line tools, Installing Ubuntu, Networking, Command Line Utilites, Equivalent Linux softwares, Online training available
 :slug: gnulinux
 
 |

@@ -6,7 +6,7 @@
 :author: Srikant Patnaik
 :pagetitle: Training and Workshops on microcontrollers and Arduino systems
 :keywords: embedded systems, digispark, anuduino, arduino, interfacings, servo motors, Kicad, fritzing, sensors, GSM modem, GPS, 8 bit microcontroller, online training
-:description: Training and Workshop on 8 bit microcontrollers, Create a low cost Arduino equivalent board, Interfacing to temperature sensors, humidity sensor, GSM, GPS, servo motors and others, Online training available
+:description: Training and Workshop on 8 bit microcontrollers in India, create a low cost Arduino board, Interfacing to temperature sensors, humidity sensor, GSM, GPS, servo motors and others, Online training available
 :slug: eightbitsystems
 
 |

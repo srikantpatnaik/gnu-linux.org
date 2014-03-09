@@ -5,8 +5,8 @@ Consultancy
 :status: hidden
 :author: Srikant Patnaik
 :pagetitle: Consultancy and Support 
-:keywords: Linux, Consultancy, Support, Android, Embedded, Bootloader
-:description: Commercial Custom Support and Consultancy on Open source tools
+:keywords: Linux, Consultancy, Support, Android, Embedded, Bootloader, Web frameworks, Linux server, Arduino
+:description: Commercial Custom Support and Consultancy on Open source tools. GNU/Linux, Android on ARM & x86, device drivers, boot speed optmizations,RAM optmization, boot time reduction, root file system development, web applications
 :slug: consultancy
 
 |
@@ -16,7 +16,7 @@ Following are our interest regions.
 |
 
 **Embedded Linux**	Linux on ARM devices - Optimizing boot time and resources,
-Qt5/Qt4, directFB based UI, Busybox customizations, uClibc and glibC based applications 
+Qt5/Qt4, directFB based UI, Busybox customizations, uClibc and glibC based applications,
 Device drivers and debugging, Beagle/Panda/Cubie/Rpi based custom applications
 
 

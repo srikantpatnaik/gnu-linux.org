@@ -4,9 +4,9 @@ Web Builder
 :date: 2014-02-26 10:02
 :status: hidden
 :author: Srikant Patnaik
-:pagetitle: Training and Workshops on Web Development and Server Setup
-:keywords: Web Development, workshops India, Django, Web2py, Jinja2, Apache, HTML5, DNS, setting ftp
-:description: Training on web development in India, Workshops and online courses on Web Development and Server setup
+:pagetitle: Training and Workshops on Web development and Server Setup
+:keywords: Web Development, workshops India, Web frameworks, Django, Web2py, Jinja2, Apache, HTML5, DNS, setting ftp
+:description: Training on web development in India. Building web apps, Installing and configuring Drupal, Wordpress, Joomla. Backup and Restore MySQL. Web frameworks, Python flask, Web2py. Online courses available
 :slug: webbuilder
 
 |

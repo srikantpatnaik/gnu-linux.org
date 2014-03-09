@@ -5,8 +5,8 @@ About Android
 :status: hidden
 :author: Srikant Patnaik
 :pagetitle: Training and Workshops on Android Core Development and Debugging
-:keywords: Linux, Android workshops India, Free course, Android debugging, Cyanogenmod, adb, android root, compiling android, online training
-:description: Embedded Linux workshops, Android debugging, Compiling Android, Recovery, Activity and Package Manager, Online training available
+:keywords: Linux, Android workshops India, Android debugging, Cyanogenmod, adb, android root, compiling android, online training
+:description: Android workshops in India, Android debugging, Compiling Android, Recovery, Rooting, Activity and Package Manager, Online training available
 :slug: android
 
 |
