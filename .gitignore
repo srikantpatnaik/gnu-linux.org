@@ -14,5 +14,6 @@ Makefile
 .swp
 .swo
 
-# .htaccess
-.htaccess
+publishconf.py
+
+
