@@ -26,7 +26,7 @@
 
 {% block title %}{{ page.pagetitle }} - {{SITENAME}}{%endblock%}
 {% block content %}
-    <h1>{{ page.title }}</h1> 
+    <h2>{{ page.title }}</h2> 
     {% import 'translations.html' as translations with context %}
     {{ translations.translations_for(page) }}
 
