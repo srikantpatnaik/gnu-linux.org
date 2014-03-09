@@ -56,6 +56,12 @@ DEFAULT_PAGINATION = 25
 
 # Added by Srikant
 
-FILES_TO_COPY = (
-   ('extra/robots.txt', 'robots.txt'),
-   ('extra/favicon.ico', 'favicon.ico'),
+STATIC_PATHS = [
+    'extra/robots.txt',
+	'extra/favicon.ico'
+    ]
+
+EXTRA_PATH_METADATA = {
+    'extra/robots.txt': {'path': 'robots.txt'},
+    'extra/favicon.ico': {'path': 'favicon.ico'},
+    }
