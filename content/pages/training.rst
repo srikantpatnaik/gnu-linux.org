@@ -1,5 +1,5 @@
 Training 
-~~~~~~~~
+########
 
 :date: 2012-12-01 10:02
 :status: hidden
