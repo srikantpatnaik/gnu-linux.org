@@ -23,6 +23,7 @@ TRANSLATION_FEED_ATOM = None
 PLUGIN_PATH = "plugins"
 PLUGINS = ["sitemap"]
 
+# Added by Srikant
 SITEMAP = {                                                                 
         'format': 'xml',                                                        
         'priorities': {                                                         
@@ -52,3 +53,9 @@ DEFAULT_PAGINATION = 25
 
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
+
+# Added by Srikant
+
+FILES_TO_COPY = (
+   ('extra/robots.txt', 'robots.txt'),
+   ('extra/favicon.ico', 'favicon.ico'),

@@ -1,0 +1,4 @@
+# robots.txt for http://gnu-linux.org
+
+User-agent: *
+Disallow: /themes/
