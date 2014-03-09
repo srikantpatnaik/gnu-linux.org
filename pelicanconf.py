@@ -54,14 +54,11 @@ DEFAULT_PAGINATION = 25
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
 
-# Added by Srikant
+# Added by Srikant, not working though, so added copy in Makefile
 
-STATIC_PATHS = [
-    'extra/robots.txt',
-	'extra/favicon.ico'
-    ]
+STATIC_PATHS = ["extra/robots.txt"]
 
 EXTRA_PATH_METADATA = {
-    'extra/robots.txt': {'path': 'robots.txt'},
-    'extra/favicon.ico': {'path': 'favicon.ico'},
+     'extra/robots.txt': {'path': 'robots.txt'},
+     'extra/favicon.ico': {'path': 'favicon.ico'},
     }
