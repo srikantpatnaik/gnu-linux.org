@@ -80,3 +80,4 @@ Clone the `pelican theme` repository ::
 
 To enable theme, just change the name in `pelicanconf.py` file. 
 
+NB: Removed `publishconf.py` and `Makefile` for privacy reasons.
