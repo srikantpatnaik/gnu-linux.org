@@ -31,9 +31,6 @@ After you enter the device shell using **adb** using::
 Change to root
 ~~~~~~~~~~~~~~
 
-.. raw:: html
-
-   <div class="outline-text-3" id="text-1">
 
 First and foremost thing is to have root access to the device. In
 CyanogenMod, a pre-installed *SuperUser* app with grant root access to
@@ -43,24 +40,9 @@ all applications as well as to file-system ::
 
 will give root access. The prompt will change from ``$`` to ``#``.
 
-.. raw:: html
-
-   </div>
-
-.. raw:: html
-
-   </div>
-
-.. raw:: html
-
-   <div id="outline-container-2" class="outline-3">
 
 Create a swap-file
 ~~~~~~~~~~~~~~~~~~
-
-.. raw:: html
-
-   <div class="outline-text-3" id="text-2">
 
 Create a swap-file with the name ``swapfile.swp`` on SD-card ::
 
@@ -69,24 +51,10 @@ Create a swap-file with the name ``swapfile.swp`` on SD-card ::
 
 *count* is the size of swapfile in MB. I prefer 256 MB.
 
-.. raw:: html
-
-   </div>
-
-.. raw:: html
-
-   </div>
-
-.. raw:: html
-
-   <div id="outline-container-3" class="outline-3">
 
 Make swap and turn it on.
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. raw:: html
-
-   <div class="outline-text-3" id="text-3">
 
 Once swapfile is created, which should not take more than a couple of
 minutes. Convert it into swapfile(previously it was just a bunch of
@@ -156,24 +124,9 @@ Go ahead and change swappiness from 60 to 100::
 
 and verify the value from the file ``swappiness``.
 
-.. raw:: html
-
-   </div>
-
-.. raw:: html
-
-   </div>
-
-.. raw:: html
-
-   <div id="outline-container-5" class="outline-3">
 
 Make all the changes persistent
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-.. raw:: html
-
-   <div class="outline-text-3" id="text-5">
 
 Now that the swap is been created & added to the system and the
 swappiness is set, it's time to make all the changes persistent on every
@@ -182,20 +135,8 @@ should be run and desired value of swappiness is to be set. Some shell
 scripts should do these jobs. *drewhill77* has already uploaded shell
 scripts for variety of purpose.
 
-.. raw:: html
-
-   </div>
-
-.. raw:: html
-
-   <div id="outline-container-5-1" class="outline-4">
-
 swapon
 ^^^^^^
-
-.. raw:: html
-
-   <div class="outline-text-4" id="text-5-1">
 
 As swapfile should be added to system after a boot, it is better to add
 this command to system's init. The best place is the
@@ -225,24 +166,8 @@ system boots. Make the file executable::
 
     chmod +x /data/local/userinit.d/99swapon
 
-.. raw:: html
-
-   </div>
-
-.. raw:: html
-
-   </div>
-
-.. raw:: html
-
-   <div id="outline-container-5-2" class="outline-4">
-
 swappiness
 ^^^^^^^^^^
-
-.. raw:: html
-
-   <div class="outline-text-4" id="text-5-2">
 
 The second thing is to set default *swappiness* value. It can be done
 from ``/etc/sysctl.conf`` file. ``/etc`` is write protected and it has
@@ -255,17 +180,9 @@ if does not exist::
 
     vm.swappiness=100
 
-.. raw:: html
-
-   <div class="figure">
-
 |58MB of free RAM after adding swap.|
 
 58MB of free RAM after adding swap.
-
-.. raw:: html
-
-   </div>
 
 Reboot the phone and you should have swap added with swappiness of 100.
 Read last section of `drewhill77`_ post for a brief note on swapping.
