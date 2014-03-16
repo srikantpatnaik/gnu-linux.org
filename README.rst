@@ -1,7 +1,7 @@
 Installation
 ============
 
-`Website <http://gnu-linux.org>`_ is already live. This repository is just a backup. 
+`Website <http://gnu-linux.org>`_ is live. This repository is a backup. Shared for learning only. 
 
  
 |
@@ -31,9 +31,8 @@ Installation
 
 	pelican-quickstart
 
-#. Setup `apache`. Add following text in `/etc/apache2/sites-available/gnu-linux.org.conf`
+#. Setup `apache`. Add following text in `/etc/apache2/sites-available/gnu-linux.org.conf` ::
 
-.. code:: 
 	
 	<VirtualHost *:80>                                                              
         DocumentRoot /home/srikant/Documents/gnu-linux.org/output/              
