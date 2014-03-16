@@ -11,9 +11,10 @@ output/
 
 #Vim backup files
 
-.swp
-.swo
+*.swp
+*.swo
 
+sync.sh
 #publishconf.py
 
 
