@@ -1,7 +1,7 @@
 Installation
 ============
 
-`Website <http://gnu-linux.org>`_ is already live. This repository is just a backup. Seriously, nothing to follow here. 
+`Website <http://gnu-linux.org>`_ is already live. This repository is just a backup. 
 
  
 |
