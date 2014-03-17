@@ -6,7 +6,7 @@ test by amit
 :tags: android, ant, avd, command line, sdk, terminal
 :slug: test-by-amit
 
-We often use *Eclipse* for Android programming. Of-course creating an
+some We often use *Eclipse* for Android programming. Of-course creating an
 Android project is simple and easy for a beginner and advance user using
 Eclipse. Eclipse creates a file hierarchy needed for an Android project.
 Also building and running an ``apk`` is even simpler. But for those who
