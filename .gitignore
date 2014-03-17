@@ -13,6 +13,7 @@ output/
 
 *.swp
 *.swo
+
 nohup.out
 
 sync.sh
