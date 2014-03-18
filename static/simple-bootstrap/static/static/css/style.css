@@ -13,7 +13,8 @@ body {
   padding-right: 5px;
 }
 .nav-pills{
-    display:none;
+    //display:none;
+    display:inline-block;
 }
 /* Custom page header */
 .header {
