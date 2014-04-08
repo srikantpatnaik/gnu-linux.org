@@ -6,13 +6,14 @@ Installation
  
 |
 
-**Steps for Contributors**
+Steps for Contributors
+------------------------
 
 1) Clone this repository
 
-2) `pip install pelican` or install in virtualenv, you may find instructions below
+2) **pip install pelican** or install in virtualenv, you may find instructions below
 
-3) Create an rst file with relevant name in `content` directory. 
+3) Create an rst file with relevant name in **content** directory. 
    Use the sample template below to start with
 
 .. code:: rst
@@ -33,16 +34,16 @@ Installation
     	
 	And here is the rest of the post
 
-4) Save the file and uncomment `SITEURL = 'http://127.0.0.1:8000/'` line at the top in 
+4) Save the file and uncomment **SITEURL = 'http://127.0.0.1:8000/'** line at the top in 
    `pelicanconf.py` file.
 
-5) Run `./develop_server.sh start` to start the development server and stop to kill the
+5) Run **./develop_server.sh start** to start the development server and stop to kill the
    server.
 
-6) You may put your image files inside `content/uploads/2014/**` and give relative path
+6) You may put your image files inside **content/uploads/2014/04/** and use relative path
 
-7) After you done with local testing, push your `rst` file to server using instruction 
-   provided you in `email`
+7) After you done with local testing, push your **rst** file along with images (if any) 
+   to server using instruction provided in **email**
 
 
 Chain of events to setup website from scratch
