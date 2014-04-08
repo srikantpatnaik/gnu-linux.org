@@ -5,6 +5,7 @@ from __future__ import unicode_literals
 AUTHOR = u'gnu-linux.org'
 SITENAME = u'gnu-linux.org'
 SITEURL = 'http://gnu-linux.org'
+#SITEURL = 'http://127.0.0.1:8000/'
 
 TIMEZONE = 'Asia/Kolkata'
 
