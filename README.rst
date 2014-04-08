@@ -9,12 +9,10 @@ Installation
 Steps for Contributors
 ------------------------
 
-1) Clone this repository
+1) Clone this repository and install pelican locally **pip install pelican** 
 
-2) **pip install pelican** or install in virtualenv, you may find instructions below
-
-3) Create an rst file with relevant name in **content** directory. 
-   Use the sample template below to start with
+2) Create a rst file with relevant name in **content** directory. 
+   Use may use the sample template below to start with
 
 .. code:: rst
 
@@ -34,11 +32,13 @@ Steps for Contributors
     	
 	And here is the rest of the post
 
-4) Save the file and uncomment **SITEURL = 'http://127.0.0.1:8000/'** line at the top in 
-   `pelicanconf.py` file.
+4) Save the file and uncomment ::
 
-5) Run **./develop_server.sh start** to start the development server and stop to kill the
-   server.
+	SITEURL = 'http://127.0.0.1:8000/'
+
+   line at the top of **pelicanconf.py** file
+
+5) Run **./develop_server.sh start** to start the development server and stop to kill the server
 
 6) You may put your image files inside **content/uploads/2014/04/** and use relative path
 
