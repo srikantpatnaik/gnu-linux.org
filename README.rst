@@ -12,7 +12,7 @@ Steps for Contributors
 1) Clone this repository and install pelican locally **pip install pelican** 
 
 2) Create a rst file with relevant name in **content** directory. 
-   Use may use the sample template below to start with
+   You may use the sample template below to start with
 
 .. code:: rst
 
@@ -38,7 +38,7 @@ Steps for Contributors
 
    line at the top of **pelicanconf.py** file
 
-5) Run **./develop_server.sh start** to start the development server and stop to kill the server
+5) Run **./develop_server.sh start** to start the development server and **stop** to kill the server
 
 6) You may put your image files inside **content/uploads/2014/04/** and use relative path
 
