@@ -13,7 +13,7 @@ Training
 
 Classroom sessions and workshops on industry standard GNU/Linux tools. Available for both beginners and professionals. 
 
-Workshops presently available only in India. **Online courses** will commence from June, 2014.
+Workshops presently available only in India. **Online courses** will commence from August, 2014.
 
 
 .. raw:: html
