@@ -12,7 +12,10 @@ Python2.6 on Ubuntu12.04
 
 Introduction 
 ============
-Some of the application has the dependency of python2.6 and we required higher version of the ubuntu which has python2.7 or higher version. 
+
+Some of the applications has the dependency of python2.6 and for the ubuntu12.04
+which has python2.7 we need to perform following steps. To run those application
+with python2.6 
 
 
 - Install the ppa
