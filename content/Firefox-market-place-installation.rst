@@ -47,11 +47,11 @@ Creating virtualenv
 * To know more about virtualenv click here virtualenv_ 
 * To configure python2.6 on ubuntu 12.04 click here python2.6_
 
-.. _virtualenv: http://gnu-linux.org/virtualenv
-.. _python2.6:  http://gnu-linux.org/python2.6
+.. _virtualenv: http://gnu-linux.org/Virtualenv-Configuration.html
+.. _python2.6:  http://gnu-linux.org/python2.6-on-ubuntu12.04.html
 
 ::
-        
+
       virtualenv -p /usr/bin/python26 zamboni
 
       
@@ -68,13 +68,18 @@ Installation and build of packages
 * During the cloning of the amo-validator and app-validator you will find the error inside the proxy environment.
 * clone these repo seprately using the https link and again run `make update_deps`
 
+
+
+
+* inside zamboni/zamboni/src
+
 ::
 
 
-        inside zamboni/zamboni/src
         git clone https://github.com/mozilla/amo-validator.git
         cd amo-validator/jetpack
         git clone https://github.com/mozilla/app-validator.git
+
 
 * During this `make` the first file runs is prod.txt which clone number of required packages and other python and django packages. 
 
@@ -92,7 +97,7 @@ Installation and build of packages
 * Solution is to comment the M2crypto in the compiled.txt inside the requirements dirctory. 
 
 
-  ::
+::
 
         DEB_HOST_MULTIARCH=i386-linux-gnu pip install -I --exists-action=w "https://alioth.debian.org/anonscm/git/collab-maint/m2crypto.git"
 
@@ -101,22 +106,30 @@ Installation and build of packages
 * After this uncomment the M2crypto and recompile the code using `make update_deps`        
 * Again an error comes if you dont have the `npm` install it and recompile the source
 
-To know more about npm_
-
-.. _npm: http://gnu-linux.org/npm
+::
+        
+        sudo apt-get install npm 
+        npm install http://url-of-package
 
 
 * You may also get error while npm runs
 
- ::
+::
         
         Error: SSL Error: SELF_SIGNED_CERT_IN_CHAIN
+       
 
-        Solution: npm config set ca ""
+* Solution:
+
+::
+
+        
+        npm config set ca ""
+
 
 * recompile the source code, If nothing goes wrong it will succesfully build. 
 
-# Second step is to create the mysql database.  
+* Second step is to create the mysql database.  
 
 * Create the database
 
@@ -124,25 +137,25 @@ To know more about npm_
         
         mysqladmin -uroot create zamboni
 
-# Make sure there is no password for the mysql 
+* Make sure there is no password for the mysql 
 
 ::
 
         mysqladmin -u root -pCURRENTPASSWORD password ''
 
-# Now just run command to install landfill database
+* Now just run command to install landfill database
 
 ::
         
         ./manage.py install_landfill
 
-# Update the database
+* Update the database
 
 ::
         
         make update_db
 
-# Run the server
+* Run the server
 
 
 ::
@@ -152,7 +165,7 @@ To know more about npm_
     or 
     ./manage.py runserver 0.0.0.0:8000  to run from your ip address
 
-# Open browser
+* Open browser
 
 ::
         
