@@ -11,7 +11,11 @@ Virtaulenv configuration
 
 Introduction 
 ============
-It creates a virtual environment to isolate the working copy of the python which allow us to work on the specific project without affecting the system other projects. It helps in working on different version of the packages without affecting the other version. For example you can work on the python2.6 with isolated enviroment with python2.7 on your OS.
+It creates a virtual environment to isolate the working copy of the python which 
+allow us to work on the specific project without affecting the system other projects. 
+It helps in working on different version of the packages without affecting the other 
+version. For example you can work on the python2.6 with isolated enviroment with 
+python2.7 on your OS.
 
 *Version* The latest version of the virtualenv 1.11.6 release on 16 May 14
 
@@ -84,7 +88,7 @@ Installation
 
 ::
         
-        export WORKON_HOME=~/virtual
+        export WORKON_HOME=~/myvirtual
         source /usr/local/bin/virtualwrapper.sh
 
 
@@ -94,7 +98,7 @@ Installation
         workon app
         rmvirtualenv app
 
-- This is create all the virtualenv inside the virtual directory         
+- This  create all the virtualenv inside  directory myvirtual    
         
 
 

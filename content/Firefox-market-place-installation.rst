@@ -14,8 +14,10 @@ Firefox Market Place Installation
 
 Introduction
 ============
-You can install your own market place and host your firefox apps on it. `Zamboni` is one of the code base for the market place.
-There is the official documentation for the its installation, But my documentation is specific for the proxy base network and on the Ubuntu 12.04 OS. 
+You can install your own market place and host your firefox apps on it. `Zamboni` 
+is one of the code base for the market place. There is the official documentation 
+for  its installation, But my documentation is specific for the proxy base network 
+and on the Ubuntu 12.04 OS. 
 
 Required Packages
 =================
@@ -30,7 +32,8 @@ Required Libraries
 
 ::
         
-        sudo apt-get install libxml2-dev libxslt1-dev libmysqlclient-dev libssl-dev swig openssl  pngcrush redis-server
+        sudo apt-get install libxml2-dev libxslt1-dev libmysqlclient-dev libssl-
+        dev swig openssl  pngcrush redis-server
 
  
 
@@ -47,7 +50,7 @@ Creating virtualenv
 * To know more about virtualenv click here virtualenv_ 
 * To configure python2.6 on ubuntu 12.04 click here python2.6_
 
-.. _virtualenv: http://gnu-linux.org/Virtualenv-Configuration.html
+.. _virtualenv: http://gnu-linux.org/virtualenv-configuration.html
 .. _python2.6:  http://gnu-linux.org/python2.6-on-ubuntu12.04.html
 
 ::
@@ -62,10 +65,15 @@ Installation and build of packages
         
         make update_deps
 
-* During this process you will face some problem while clone some packages from the git hub. 
+* During this process you will face some problem while cloning some packages from 
+  the git hub. 
 
-* In the clone directory of zamboni you will find the directory name requirements, It contain the file which the script use while installating and cloning the packages. 
-* During the cloning of the amo-validator and app-validator you will find the error inside the proxy environment.
+* In the clone directory of zamboni you will find the directory name requirements, 
+  It contain the file which the script use while installating and cloning the packages. 
+
+* During the cloning of the amo-validator and app-validator you will find the error 
+  inside the proxy environment.
+
 * clone these repo seprately using the https link and again run `make update_deps`
 
 
@@ -81,9 +89,11 @@ Installation and build of packages
         git clone https://github.com/mozilla/app-validator.git
 
 
-* During this `make` the first file runs is prod.txt which clone number of required packages and other python and django packages. 
+* During this `make`, the first file run is prod.txt which clone number of required 
+  packages and other python and django packages. 
 
-* The other error you may get while running the complied.txt file during the compilation of the `M2crypto` packages.
+* The other error you may get while running the complied.txt file during the compilation 
+  of the `M2crypto` packages.
 
 ::
 
@@ -94,7 +104,8 @@ Installation and build of packages
         result = (STACK * ) pkcs7_get0_signers(arg1,arg2,arg3);
         error: command 'gcc' failed with exit status 1
 
-* Solution is to comment the M2crypto in the compiled.txt inside the requirements dirctory. 
+* Solution is to comment the M2crypto in the compiled.txt inside the requirements 
+  dirctory. 
 
 
 ::
@@ -137,7 +148,7 @@ Installation and build of packages
         
         mysqladmin -uroot create zamboni
 
-* Make sure there is no password for the mysql 
+* Be sure there is no password for the mysql 
 
 ::
 
