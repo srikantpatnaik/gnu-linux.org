@@ -1,10 +1,13 @@
 vimino: Vim and arduino command line
-####################################
+====================================
+
 :date: 2013-10-10 14:39
 :author: srikant
 :category: blogs
 :tags: arduino, command line arduino, inotool, vim, vim key mapping
 :slug: vimino-vim-and-arduino-command-line
+
+|
 
 If you're an arduino folk who has no regards for the Java IDE, then
 upgrade your life now.
@@ -14,15 +17,14 @@ Benifits with vimino (Vim + ino)
 
 #. Using Vim to write arduino code, ofcourse with syntax highlight
 
-#. Using Vim keymap to compile and upload the hex file to Arduino board
-(using inotool)
+#. Using Vim keymap to compile and upload the hex file to Arduino board (using inotool)
 
 Steps to perform
-~~~~~~~~~~~~~~~~
+----------------
 
 1. Download the vim syntax file from `here`_
 
-#. Move the downloaded **arduino.vim** file to `~/.vim/syntax/arduino.vim`
+#. Move the downloaded **arduino.vim** file to ~/.vim/syntax/arduino.vim
 
 #. Create a file `~/.vim/ftdetect/arduino.vim` and add the following line::
 
@@ -40,11 +42,12 @@ Steps to perform
 
    save and exit.
 
-  This will map your<F3> key to build and upload from inside Vim environment.
+   This will map your<F3> key to build and upload from inside Vim environment.
 
 #. Now follow the steps given at inotool.org/quickstart to test your first blinky code.
 
-NOTE:  To use `<F3> keymap`, open the source file from project's root directory. For example ::
+
+NOTE:  To use **<F3> keymap**, open the source file from project's root directory. For example ::
 
 	vim src/sketch.ino
 
