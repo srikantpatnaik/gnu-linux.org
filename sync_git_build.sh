@@ -11,3 +11,5 @@ while true;
         fi                                                                  
     sleep 10
     done
+# Just for manual copy paste #lazy-me
+# make publish && cp -r output/* /var/www/gnu-linux.org/

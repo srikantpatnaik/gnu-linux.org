@@ -8,9 +8,10 @@
 		<meta name="keywords" content="{% block metakey %}{% endblock %}" /> <!--Srikant-->
 		<meta name="author" content="{% block metaauthor %}{% endblock %}" /> <!--Srikant-->
         <!-- <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" /> Srikant-->
-        <!-- <link href="{{ SITEURL }}/theme/static/css/bootstrap-min.css" rel="stylesheet" /> --> <!-- Srikant -->
+        {# <link href="{{ SITEURL }}/theme/static/css/bootstrap-min.css" rel="stylesheet" /> --> <!-- Srikant -->
+        <link href="{{ SITEURL }}/theme/static/css/style-min.css" rel="stylesheet" />#}
         <link href="{{ SITEURL }}/theme/static/css/bootstrap.css" rel="stylesheet" /> <!-- Srikant -->
-        <link href="{{ SITEURL }}/theme/static/css/style-min.css" rel="stylesheet" />
+        <link href="{{ SITEURL }}/theme/static/css/style.css" rel="stylesheet" />
 		<link rel="shortcut icon" type="text/css" href="{{ SITEURL }}/favicon.ico" />
         <script src="{{ SITEURL }}/theme/static/js/email-min.js"></script> <!-- Srikant -->
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -57,18 +58,13 @@
 
     <body id="index" class="archive">
         <div class="container">
-            <div class="header">
-                <ul class="nav nav-pills pull-right">
-               {# <li class="{% block navclass %}{{ NAVCLASS }}{% endblock navclass %}"><a href="{{ SITEURL }}/pages/training_and_consultancy.html">more</a></li> #}
+             <div class="header"> 
+               <ul class="nav nav-pills pull-right" style="border-bottom: 1px solid #e5e5e5;border-top: 1px solid #e5e5e5">
+               <li> <a style="color:#999;" href="{{ SITEURL }}">home</a></li>
                <li> <a style="color:#999;" href="{{ SITEURL }}/pages/training.html">services</a></li>
-              {#  {% for p in PAGES %}
-                    <li{% if p == page %} class="active"{% endif %}><a href="{{ SITEURL }}/{{ p.url }}">{{ p.title }}</a></li>
-                {% endfor %}
-			  #}
-{# Srikant                    <li{% if author or tag %} class="active"{% endif %}{% block archclass %}{{ ARCHCLASS }}{% endblock archclass %}><a href="{{ SITEURL }}/archives.html">Archives</a></li> #}
-                </ul>
-                <h1 class="text-muted"><a href="{{ SITEURL }}">{{ SITENAME }}</a></h1>
-             </div>
+               </ul>
+ {#              <h1 class="text-muted"><a style="font-size:18px;" href="{{ SITEURL }}">{{ SITENAME }}</a></h1> #}
+             </div> 
             {% block content %}
             {% endblock %}
             <footer id="contentinfo" class="footer">
