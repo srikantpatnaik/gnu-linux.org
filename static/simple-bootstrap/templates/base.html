@@ -8,24 +8,25 @@
 		<meta name="keywords" content="{% block metakey %}{% endblock %}" /> <!--Srikant-->
 		<meta name="author" content="{% block metaauthor %}{% endblock %}" /> <!--Srikant-->
         <!-- <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" /> Srikant-->
-        <link href="{{ SITEURL }}/theme/static/css/bootstrap-min.css" rel="stylesheet" /> <!-- Srikant -->
+        <!-- <link href="{{ SITEURL }}/theme/static/css/bootstrap-min.css" rel="stylesheet" /> --> <!-- Srikant -->
+        <link href="{{ SITEURL }}/theme/static/css/bootstrap.css" rel="stylesheet" /> <!-- Srikant -->
         <link href="{{ SITEURL }}/theme/static/css/style-min.css" rel="stylesheet" />
 		<link rel="shortcut icon" type="text/css" href="{{ SITEURL }}/favicon.ico" />
         <script src="{{ SITEURL }}/theme/static/js/email-min.js"></script> <!-- Srikant -->
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-		{% if GOOGLE_ANALYTICS %}                                               
-        <script type="text/javascript">                                         
+		{% if GOOGLE_ANALYTICS %}
+        <script type="text/javascript">
         var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
         document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-        </script>                                                               
-        <script type="text/javascript">                                         
-        try {                                                                   
-          var pageTracker = _gat._getTracker("{{ GOOGLE_ANALYTICS }}");         
-          pageTracker._trackPageview();                                         
-        } catch(err) {}                                                         
-        </script>                                                               
-        {% endif %}    
+        </script>
+        <script type="text/javascript">
+        try {
+          var pageTracker = _gat._getTracker("{{ GOOGLE_ANALYTICS }}");
+          pageTracker._trackPageview();
+        } catch(err) {}
+        </script>
+        {% endif %}
 
         {% if FEED_ALL_ATOM %}
         <link href="{{ FEED_DOMAIN }}/{{ FEED_ALL_ATOM }}" type="application/atom+xml" rel="alternate" title="{{ SITENAME }} Full Atom Feed" />
@@ -74,15 +75,15 @@
 
                     <nav class="pull-right bottom-nav">
 
-	
+
 					<span class="pop" data-toggle="popover" data-placement="top">
 						submit
 						<span class="content" style="text-align:justify;">
 						To post your blog at gnu-linux.org, contact us at <b>blog [at] gnu-linux.org</b>
-						You hold all rights to your content, only your name will be published. 
+						You hold all rights to your content, only your name will be published.
 						</span>
 					</span> &nbsp;
-					
+
 					<span class="pop" data-toggle="popover" data-placement="top">
 						social
 						<span class="content" style="text-align:justify;">
@@ -94,16 +95,16 @@
 					<span class="pop" data-toggle="popover" data-placement="top">
 						disclaimer
 						<span class="content" style="text-align:justify;">
-						There is no guarantee or warranty of any kind on content published on gnu-linux.org. 
+						There is no guarantee or warranty of any kind on content published on gnu-linux.org.
 						Please raise issues related to content and trademark to <b> support [at] gnu-linux.org</b>
-						Linux® is the registered trademark of Linus Torvalds in the U.S. & other countries.	
+						Linux® is the registered trademark of Linus Torvalds in the U.S. & other countries.
 						</span>
 					</span> &nbsp;
 
 					<span class="pop" data-toggle="popover" data-placement="top">
 						about
 						<span class="content" style="text-align:justify;">
-						The gnu-linux.org is a web portal for News, Discussions, Blogs, Training and Consultancy. 
+						The gnu-linux.org is a web portal for News, Discussions, Blogs, Training and Consultancy.
 						To explore opportunities with us, please write to <b> info [at] gnu-linux.org</b>
 						</span>
 					</span>
@@ -114,7 +115,7 @@
 
 					<nav class="pull-left bottom-nav">
                     <a href="{{ FEED_DOMAIN }}/sitemap.xml">sitemap</a>&nbsp;
-                    <a href="{{ FEED_DOMAIN }}/{{ FEED_ALL_ATOM }}">rss</a> 
+                    <a href="{{ FEED_DOMAIN }}/{{ FEED_ALL_ATOM }}">rss</a>
 					</nav>
                    {#Srikant &copy; <a href="{{SITEURL}}">{{SITENAME}}</a> Proudly powered by <a href="http://getpelican.com/">Pelican</a> #}
 
@@ -127,30 +128,30 @@
  <!--		<script>$('.pop').popover();</script> -->
 
 
-    <script type="text/javascript" charset="utf-8">                             
-        $(document).ready(function() {                                          
-            $(".pop").popover({                                                 
-                html: true,                                                     
-     /*           title: function() {                                             
-                    data = $(this).find(".title").html();                       
+    <script type="text/javascript" charset="utf-8">
+        $(document).ready(function() {
+            $(".pop").popover({
+                html: true,
+     /*           title: function() {
+                    data = $(this).find(".title").html();
                     data += "<span class='remove' style='float:right;'>&times</span>";
-                    return data;                                                
-                },*/                                                              
-                content: function() {                                           
+                    return data;
+                },*/
+                content: function() {
 					data ='';
                     data += "<span class='remove' style='position:absolute;top:5px;right:5px;font-size: 18px;'>&times</span>";
-					data += $(this).find(".content").html();                     
-                    return  data 
-                }                                                               
-            });                                                                 
-            $(".pop").click(function() {                                        
-                $(".pop").not(this).popover("hide");                            
-            });                                                                 
-            $("body").on("click", ".remove", function(){                        
-                $(this).parents().find(".pop").popover("hide");                 
-            });                                                                 
-        });                                                                     
-                                                                                
-    </script>       
+					data += $(this).find(".content").html();
+                    return  data
+                }
+            });
+            $(".pop").click(function() {
+                $(".pop").not(this).popover("hide");
+            });
+            $("body").on("click", ".remove", function(){
+                $(this).parents().find(".pop").popover("hide");
+            });
+        });
+
+    </script>
     </body>
 </html>
