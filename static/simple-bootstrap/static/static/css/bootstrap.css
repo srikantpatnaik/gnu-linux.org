@@ -301,10 +301,10 @@ a:focus {
  // text-decoration: underline;
 }
 
-/* a:visited {                                                                   
-//    text-decoration: underline;                                                 
+/* a:visited {
+//    text-decoration: underline;
   color: #0431B4;
-  }                
+  }
 */
 /* Added for title and 2nd line info in each post, Srikant */
 
@@ -510,6 +510,14 @@ small,
 }
 cite {
   font-style: normal;
+/* Added by Srikant to highlight cite in pelican */
+    padding: 2px 4px;
+    font-size: 90%;
+    color: #000;
+    background-color: #eee;
+    border-radius: 3px;
+    box-shadow: 0px -1px 0px rgba(0, 0, 0, 0.25) inset;
+
 }
 .text-left {
   text-align: left;
