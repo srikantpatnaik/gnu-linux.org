@@ -24,7 +24,7 @@ Steps to perform
 
 1. Download the vim syntax file from `here`_
 
-#. Move the downloaded **arduino.vim** file to ~/.vim/syntax/arduino.vim
+#. Move the downloaded **arduino.vim** file to `~/.vim/syntax/arduino.vim`
 
 #. Create a file `~/.vim/ftdetect/arduino.vim` and add the following line::
 
