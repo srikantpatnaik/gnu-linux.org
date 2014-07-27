@@ -473,6 +473,7 @@ h1,
 h2,
 .h2 {
   font-size: 30px;
+ /* margin-top: 50px;*/
 }
 h3,
 .h3 {
@@ -772,6 +773,8 @@ pre code {
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
+  background-color: #f6f6ef;
+  border-radius: 4px;
 }
 @media (min-width: 768px) {
   .container {
@@ -4270,7 +4273,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   padding: 5px 14px;
   background-color: #fff;
   border: 1px solid #ddd;
-  border-radius: 15px;
+  border-radius: 8px;
 }
 .pager li > a:hover,
 .pager li > a:focus {

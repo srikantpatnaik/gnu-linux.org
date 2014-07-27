@@ -30,7 +30,7 @@ body {
 }
 
 .content { /*Added by Srikant*/
- padding-top: 20px;
+ padding-top: 50px;
 }
 
 /* Custom page footer */
@@ -185,7 +185,8 @@ color:#848484; //Srikant
   }
   /* Space out the masthead */
   .header {
-    margin-bottom: 30px;
+    margin-top: 5px;
+    margin-bottom: 5px;
   }
  .nav-pills,.bottom-nav{
     display:block;
