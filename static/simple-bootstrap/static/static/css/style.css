@@ -18,7 +18,8 @@ body {
 }
 /* Custom page header */
 .header {
-  border-bottom: 1px solid #e5e5e5;
+ /* border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5; Srikant*/
 }
 /* Make the masthead heading the same height as the navigation */
 .header h3 {
@@ -26,6 +27,10 @@ body {
   margin-bottom: 0;
   line-height: 40px;
   padding-bottom: 19px;
+}
+
+.content { /*Added by Srikant*/
+ padding-top: 20px;
 }
 
 /* Custom page footer */
