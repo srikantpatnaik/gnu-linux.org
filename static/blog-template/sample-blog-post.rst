@@ -1,5 +1,5 @@
-Download this file as raw, and see the comments
-===============================================
+Use as raw, commented sample content
+====================================
 
 ..	:date: 2013-01-18 09:10
 	:author: Srikant
@@ -7,17 +7,15 @@ Download this file as raw, and see the comments
 	:tags: dd, ubuntu, gnu, linux
 	:slug: url-which-you-want-on-link
 
- 	This is the subtitle
-	--------------------
+ 	This is a subtitle
+	------------------
 
-	This is the sub-subtitle
-	~~~~~~~~~~~~~~~~~~~~~~~~
+	This is a sub-subtitle
+	~~~~~~~~~~~~~~~~~~~~~~
 
-	This is the sub-sub-subtitle
-	^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+	This is a sub-sub-subtitle
+	^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-	Bullets
-	^^^^^^^
 	* one
 
 	* two
@@ -29,9 +27,9 @@ Download this file as raw, and see the comments
 
 	#. b
 
-	To add a link `click here <http://gnu-linux.org/favicon.ico>`_
+	To get more on docutils `click here <docutils.sourceforge.net/docs/user/rst/quickref.html>`_
 
-	To add a sub a highlighted `word`
+	To highlight a word `word`
 
 	To quote ::
 
