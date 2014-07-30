@@ -34,3 +34,9 @@ Use as raw, commented sample content
 	To quote ::
 
 		this is inside a box
+
+	To redirect when clicked on image
+
+        .. image:: http://gnu-linux.org/favicon.ico
+        :target: http://gnu-linux.org
+
