@@ -28,6 +28,9 @@ Use as raw, commented sample content
 	#. b
 
 	To get more on docutils `click here <docutils.sourceforge.net/docs/user/rst/quickref.html>`_
+        , `here for markups <http://sphinx-doc.org/markup/misc.html>`_ and
+         `here for directives <docutils.sourceforge.net/docs/ref/rst/directives.html>`_
+
 
 	To highlight a word `word`
 
