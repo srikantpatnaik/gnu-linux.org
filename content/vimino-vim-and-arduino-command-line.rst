@@ -1,6 +1,7 @@
 vimino: Vim and arduino command line
 ====================================
 
+
 :date: 2013-10-10 14:39
 :author: srikant
 :category: blogs
@@ -9,7 +10,7 @@ vimino: Vim and arduino command line
 
 |
 
-If you're an arduino folk who has no regards for the Java IDE, then
+If you are an arduino folk who has no regards for the Java IDE, then
 upgrade your life now.
 
 Benifits with vimino (Vim + ino)

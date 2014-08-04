@@ -31,7 +31,7 @@ import os
 extensions = []
 
 # Add any paths that contain templates here, relative to this directory.
-#templates_path = ['templates']
+templates_path = ['templates']
 
 # The suffix of source filenames.
 source_suffix = '.rst'
@@ -44,7 +44,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'gnu-linux.org'
-copyright = u'2014, gnu-linux.org'
+copyright = u'2012-2014, gnu-linux.org'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -104,7 +104,7 @@ html_theme = 'greencloud'
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
 # documentation.
-#html_theme_options = {}
+html_theme_options = {}
 
 # Add any paths that contain custom themes here, relative to this directory.
 html_theme_path = ['static/cloud_sptheme/themes']
@@ -257,3 +257,9 @@ texinfo_documents = [
 
 # If true, do not generate a @detailmenu in the "Top" node's menu.
 #texinfo_no_detailmenu = False
+
+# ===========================================================================
+
+googleanalytics_id = 'UA-37371681-1'
+disqus_shortname = 'aplaceforfreeminds'
+
