@@ -37,12 +37,12 @@ Step 4. Download the demos ::
 	$ wget http://www.red5.org/downloads/red5/1\_0/red5-1.0.0-RC1.zip
 
 Step 5. unzip the file and change the directory::
-	
+
 	unzip red5-1.0.0-RC1.zip -d red5
 	cd red5
 
 Step 6. Copy the demos and installer to working directory of red5::
-	
+
 	 sudo cp -R webapps/root/demos /var/lib/red5/webapps/root/demos
 	 sudo cp -R webapps/installer /var/lib/red5/webapps/installer
 
@@ -78,17 +78,17 @@ $ wget
 http://red5.googlecode.com/svn-history/r3990/snapshots/oflaDemo-r3989-java6.war
 
 unzip the war file::
-	
+
 	 unzip oflaDemo-r3989-java6.war
 
 restart the server::
 
 	sudo service red5-server restart
 
-Refresh the page and you will find the running video. 
+Refresh the page and you will find the running video.
 
 Enjoy!!!!
 
-.. |red5| image:: http://gnu-linux.org/uploads/2013/05/red5-300x216.png
-   :target: http://gnu-linux.org/uploads/2013/05/red5.png
+.. |red5| image:: uploads/2013/05/red5-300x216.png
+   :target: uploads/2013/05/red5.png
 

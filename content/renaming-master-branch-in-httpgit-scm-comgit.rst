@@ -21,10 +21,10 @@ rename my ``master`` branch to ``ics``.
 
    <div class="outline-text-4" id="text-1">
 
-.. code-block:: identifier
+.. code-block:: c
 
-    git branch froyo 
-    git branch ics 
+    git branch froyo
+    git branch ics
 
 .. raw:: html
 
@@ -38,14 +38,10 @@ rename my ``master`` branch to ``ics``.
 
    <div id="outline-container-2" class="outline-4">
 
-**now rename the =master= branch to =ics=**
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+How rename the =master= branch to =ics=
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. raw:: html
-
-   <div class="outline-text-4" id="text-2">
-
-.. code-block:: identifier
+Simply type ::
 
     git branch -M -a master froyo
 
@@ -71,7 +67,7 @@ exists.
 
    <div class="outline-text-4" id="text-3">
 
-.. code-block:: identifier
+.. code-block:: c
 
     git push origin :master
 
@@ -99,45 +95,32 @@ to `github`_. Visit the repository, go to the ``Admin`` tab. In the
 
    <div class="outline-text-4" id="text-4">
 
-#. **to clone specific branch from git repository**
-
-   .. code-block:: identifier
+#. To clone specific branch from git repository ::
 
        git clone -b BRANCH_NAME git@github.com:USER/REPOSITORY.git
 
-   for example,
-
-   .. code-block:: identifier
+   for example, ::
 
        git clone -b my-branch git@github.com:androportal/installer.git
 
-#. **copy file from another branch**
-
-   .. code-block:: identifier
+#. Copy file from another branch ::
 
        git co BRANCH_NAME FILE
 
-   for example,
-
-   .. code-block:: identifier
+   for example::
 
        git co froyo html2sphinx.sh
 
-#. **to checkout particular branch from remotes**
-
-   .. code-block:: identifier
+#. To checkout particular branch from remotes ::
 
        git co -b BRANCH remotes/origin/BRANCH
 
-   for example,
-
-   .. code-block:: identifier
+   for example, ::
 
        git co -b froyo remotes/origin/froyo
 
-#. **to remove files from git which are already deleted from system**
+#. To remove files from git which are already deleted from system ::
 
-   .. code-block:: identifier
 
        for file in $(git ls-files --deleted); do git rm $file; done
 

@@ -47,7 +47,7 @@ Details on Arduino open hardware/software project can be found at
 
 .. _arduino.cc: http://arduino.cc/
 
-.. |image0| image:: http://gnu-linux.org/uploads/2011/10/arduino-android.png
-   :target: http://gnu-linux.org/uploads/2011/10/arduino-android.png
-.. |image1| image:: http://gnu-linux.org/uploads/2011/10/PT_101006.jpg
+.. |image0| image:: uploads/2011/10/arduino-android.png
+   :target: uploads/2011/10/arduino-android.png
+.. |image1| image:: uploads/2011/10/PT_101006.jpg
    :target: http://gnu-linux.org/?attachment_id=

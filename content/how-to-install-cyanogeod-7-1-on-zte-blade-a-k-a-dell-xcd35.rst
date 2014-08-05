@@ -155,8 +155,8 @@ Happy Hacking. :)
  
 
 .. _link: http://www.cyanogenmod.com/devices
-.. _z4root\_blade\_perm\_root\_v2.apk: http://gnu-linux.org/uploads/2012/03/z4root_blade_perm_root_v2.apk_.zip
+.. _z4root\_blade\_perm\_root\_v2.apk: uploads/2012/03/z4root_blade_perm_root_v2.apk_.zip
 .. _download: http://download.cyanogenmod.com/get/update-cm-7.1.0-Blade-signed.zip
 
-.. |image0| image:: http://techkhabri.com/uploads/2011/10/ROM-manager.png
-   :target: http://gnu-linux.org/uploads/2011/10/ROM-manager.png
+.. |image0| image:: uploads/2011/10/ROM-manager.png
+   :target: uploads/2011/10/ROM-manager.png

@@ -54,10 +54,10 @@ Enjoy editing :)
 
  
 
-.. |song loaded in audacity| image:: http://gnu-linux.org/uploads/2011/12/zoom.png
-.. |press zoom on audacity| image:: http://gnu-linux.org/uploads/2011/12/zoom2-300x168.png
-   :target: http://gnu-linux.org/uploads/2011/12/zoom2.png
-.. |select-noise-portion| image:: http://gnu-linux.org/uploads/2011/12/select-noise-portion-300x168.png
-   :target: http://gnu-linux.org/uploads/2011/12/select-noise-portion.png
-.. |image3| image:: http://gnu-linux.org/uploads/2011/12/noise-profile-300x168.png
-   :target: http://gnu-linux.org/uploads/2011/12/noise-profile.png
+.. |song loaded in audacity| image:: uploads/2011/12/zoom.png
+.. |press zoom on audacity| image:: uploads/2011/12/zoom2-300x168.png
+   :target: uploads/2011/12/zoom2.png
+.. |select-noise-portion| image:: uploads/2011/12/select-noise-portion-300x168.png
+   :target: uploads/2011/12/select-noise-portion.png
+.. |image3| image:: uploads/2011/12/noise-profile-300x168.png
+   :target: uploads/2011/12/noise-profile.png

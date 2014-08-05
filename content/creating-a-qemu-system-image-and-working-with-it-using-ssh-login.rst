@@ -45,19 +45,16 @@ Steps
    <div class="outline-text-4" id="text-1-1">
 
 If you are having Debian based distro, ubuntu may be, then you can
-install qemu using the command
+install qemu using the command ::
 
-.. code-block:: identifier
 
-    sudo apt-get install qemu-system 
+    sudo apt-get install qemu-system
 
 this will install all qemu-system binaries for all major cpu
 architectures. If you are having RPM based distro(like fedora etc.),
-first login as root and type
+first login as root and type ::
 
-.. code-block:: identifier
-
-    yum install qemu 
+    yum install qemu
 
 else you can also compile the latest stable `source`_. Please refer the
 README for compilation instructions.
@@ -81,16 +78,13 @@ README for compilation instructions.
 
    <div class="outline-text-4" id="text-1-2">
 
-We need to first create a raw qemu image using command
+We need to first create a raw qemu image using command ::
 
-.. code-block:: identifier
 
     qemu-img create -f raw IMAGE_NAME.img SIZE
 
 for example, if I want to create an image of ``32G`` with name as
-``ics-testing.img`` then
-
-.. code-block:: identifier
+``ics-testing.img`` then ::
 
     qemu-img create -f raw ics-testing.img 32G
 
@@ -99,17 +93,13 @@ an OS. In this case I will install `ubuntu
 12.04 <http://releases.ubuntu.com/12.04/ubuntu-12.04-desktop-amd64.iso>`__
 (AMD64) from an iso image.
 
-The syntax would be
-
-.. code-block:: identifier
+The syntax would be ::
 
     qemu-system-ARCH -vnc none,ipv4 -hda IMAGE_NAME -cdrom /PATH/TO/ISO/FILE -m MEMORY -enable-kvm
 
 for example, if my system arch is ``x86-64`` and my iso location is
 ``/home/devils/iso/ubuntu-12.04-desktop-amd64.iso`` with memory as
-``4G``. Also I want to enable kernel based virtualisation.
-
-.. code-block:: identifier
+``4G``. Also I want to enable kernel based virtualisation ::
 
     qemu-system-x86_64 -vnc none,ipv4 -hda ics-testing.img \
     -cdrom /home/devils/iso/ubuntu-12.04-desktop-amd64.iso \
@@ -137,22 +127,18 @@ the system.
 
    <div class="outline-text-4" id="text-1-3">
 
-Once the installation is complete, boot the image by typing,
-
-.. code-block:: identifier
+Once the installation is complete, boot the image by typing ::
 
     qemu-system-x86_64 -vnc none,ipv4 -hda ics-testing.img \
     -m 4096 -enable-kvm
 
 now configure the system, its package manager and user's account.
 Install Openssh-server and enable ssh logins. If everything is
-configured, start qemu using,
-
-.. code-block:: identifier
+configured, start qemu using ::
 
     qemu-system-x86_64 -vnc none,ipv4 -hda ics-testing.img \
     -m 4096 -enable-kvm \
-    -redir tcp:2200::22    
+    -redir tcp:2200::22
 
 The ``-redir tcp:2200::22`` redirects TCP traffic on the host port
 ``2200`` to the guest machine (QEMU) port ``22``. This will allow us to
@@ -163,16 +149,12 @@ SSH into the machine later by connecting to ``localhost`` on port
 
 -  ssh into qemu
 
-   You can ssh into the running qemu system using a command
-
-   .. code-block:: identifier
+   You can ssh into the running qemu system using a command ::
 
        ssh -p PORT USER@IP-Address or HOSTNAME
 
    for example, if I want to connect to port ``2200`` of ``localhost``
-   with username as ``qemu-user``, then
-
-   .. code-block:: identifier
+   with username as ``qemu-user``, then ::
 
        ssh -p 2200 qemu-user@localhost
 
@@ -202,16 +184,13 @@ SSH into the machine later by connecting to ``localhost`` on port
 Now as the image is configured and working, we can also create a
 snapshots of that image and work on it keeping an original image intact.
 
-syntax:
-
-.. code-block:: identifier
+syntax::
 
     qemu-img create -f qcow2 -b ORIGINAL_IMAGE_NAME SNAPSHOT_IMAGE_NAME
 
 for example if my original image name is ``ics-testing.img`` and my
-snapshot image name is ``snapshot.img``, then
+snapshot image name is ``snapshot.img``, then ::
 
-.. code-block:: identifier
 
     qemu-img create -f qcow2 -b ics-testing.img snapshot.img
 
@@ -238,9 +217,8 @@ more detail.
 
    <div class="outline-text-4" id="text-1-5">
 
-You can use the snapshot image using
+You can use the snapshot image using ::
 
-.. code-block:: identifier
 
     qemu-system-x86_64 -vnc none -hda snapshot.img \
     -m 4096 -enable-kvm \
