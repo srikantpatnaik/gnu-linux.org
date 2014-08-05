@@ -75,6 +75,14 @@ gnu-linux.org
    content/whats-coming-in-kde-telepathy-0-4
    content/working-with-chroot-jail-environment
    content/writing-udev-rules-for-flash-drive
-   content/xfce-missing-battery-status
+   content/pages/aboutandroid
+   content/pages/cliprograms
+   content/pages/consultancy
+   content/pages/eightbitsystems
+   content/pages/embeddedlinux
+   content/pages/thelinux
+   content/pages/training
+   content/pages/webbuilder
+
 
 
