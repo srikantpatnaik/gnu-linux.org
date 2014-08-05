@@ -67,7 +67,7 @@ release = '1'
 
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
-exclude_patterns = ['build']
+exclude_patterns = ['build', 'README.rst']
 
 # The reST default role (used for this markup: `text`) to use for all
 # documents.
@@ -133,7 +133,7 @@ html_static_path = ['static']
 # Add any extra paths that contain custom files (such as robots.txt or
 # .htaccess) here, relative to this directory. These files are copied
 # directly to the root of the documentation.
-#html_extra_path = []
+#html_extra_path = ['content/uploads']
 
 # If not '', a 'Last updated on:' timestamp is inserted at every page bottom,
 # using the given strftime format.
